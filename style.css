@@ -320,6 +320,16 @@ body {
     background-color: #7600bc;
     border: 1px solid #7600bc;
     color: #fff;
+   
+        /* CSS to style the table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
     display: block;
     border-radius: 6px;
     text-align: center;
