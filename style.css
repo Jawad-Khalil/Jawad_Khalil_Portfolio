@@ -320,3 +320,12 @@ body {
     background-color: #7600bc;
     border: 1px solid #7600bc;
     color: #fff;
+/* Define the border style for tables with a specific class */
+.table-with-borders {
+    border-collapse: collapse;
+}
+
+/* Apply borders to all sides of table, th, and td elements within the specified class */
+.table-with-borders, .table-with-borders th, .table-with-borders td {
+    border: 1px solid black;
+}
