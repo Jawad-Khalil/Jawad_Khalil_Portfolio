@@ -320,17 +320,3 @@ body {
     background-color: #7600bc;
     border: 1px solid #7600bc;
     color: #fff;
-    
-/* CSS styles for the table with the class 'custom-table' */
-    .custom-table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-    .custom-table th, .custom-table td {
-        border: 1px solid #dddddd;
-        padding: 8px;
-        text-align: left;
-    }
-    .custom-table th {
-        background-color: #f2f2f2;
-    }
