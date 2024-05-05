@@ -329,3 +329,12 @@ body {
 .table-with-borders, .table-with-borders th, .table-with-borders td {
     border: 1px solid black;
 }
+.text {
+    font-size: 16px; /* Default font size */
+}
+
+/* Media query for screens smaller than 768px (typical smartphones) */
+@media screen and (max-width: 767px) {
+    .text {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
