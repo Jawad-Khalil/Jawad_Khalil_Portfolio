@@ -187,6 +187,12 @@ border: 2px solid #3498db; /* Border color */
   padding-left: 70px; /* Adjust this value to decrease the left side */
 }
 
+@media only screen and (max-width: 767px) {
+            .skill {
+                width: 100%; /* Set width to 100% for single-column layout on smaller screens */
+            }
+}
+
 .skill:not(:last-child) {
     margin-right: 10px; /* Right side margin for all projects except the last one */
 }
