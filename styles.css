@@ -22,6 +22,13 @@ header {
     padding: 40px 0; /* Add padding to the top and bottom */
 }
 
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 20px 0; /* Reduce padding for smaller screens */
+    }
+}
+
 .top-menu {
     text-align: center; /* Center align the content */
 }
