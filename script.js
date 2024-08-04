@@ -1,3 +1,4 @@
+
 function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('active');
@@ -19,4 +20,8 @@ function scrollToTop() {
 
 document.getElementById("scrollToTopBtn").addEventListener("click", scrollToTop);
 
-
+// Add this script at the end of your HTML or in a separate JS file
+document.addEventListener("DOMContentLoaded", function() {
+    const currentYear = new Date().getFullYear();
+    document.getElementById("footerYear").textContent = currentYear;
+});
