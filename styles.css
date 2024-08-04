@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* Basic styles */
 body {
     font-family: Arial, sans-serif;
@@ -13,13 +14,15 @@ body {
 }
 
 .container h1 {
-  margin-bottom: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px; /* Adjust the value as needed */
 }
+
 /* Header styles */
 header {
     background-color: #333; /* Background color for the header */
-    color: White; /* Text color for the header */
+    color: white; /* Text color for the header */
     padding: 40px 0; /* Add padding to the top and bottom */
+    text-align: center; /* Center align header content */
 }
 
 /* Media query for screens smaller than 768px (typical mobile devices) */
@@ -52,6 +55,7 @@ header {
 
 .menu a {
     text-decoration: none; /* Remove underline from all links in the menu */
+    color: white; /* Ensure text color is readable */
 }
 
 .menu ul {
@@ -62,7 +66,6 @@ header {
 .menu ul li {
     display: inline-block; /* Display menu items horizontally */
     margin-right: 20px; /* Add space between menu items */
-  
 }
 
 .menu ul li:last-child {
@@ -71,21 +74,16 @@ header {
 
 .menu li a:hover {
     font-weight: bold;
-   text-decoration: underline; /* Underline only when hovered */
+    text-decoration: underline; /* Underline only when hovered */
 }
 
-
-
-
-
 .container {
-    max-width: 1300px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 15px;
 }
 
 /* CSS for Profile Image Section */
-
 .profile-container {
     position: relative;
     display: flex;
@@ -112,7 +110,16 @@ header {
     object-fit: cover; /* Ensures the image is cropped to cover the entire container */
 }
 
+@media screen and (max-width: 718px) {
+    .profile-container {
+        height: 35vh; /* Adjust height for very small screens */
+    }
 
+    .profile-image {
+        width: 200px; /* Smaller width for very small screens */
+        height: 200px; /* Smaller height for very small screens */
+    }
+}
 
 /* Main section styles */
 main {
@@ -120,7 +127,7 @@ main {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 section h1 {
@@ -128,13 +135,15 @@ section h1 {
     text-decoration: underline;
     font-size: 30px;
 }
+
 section h2 {
     margin-bottom: 15px;
-    margin-top: 15;
+    margin-top: 15px;
 }
+
 section ul {
     margin-bottom: 15px;
-    margin-top: 15;
+    margin-top: 15px;
 }
 
 /* Responsive styles */
@@ -142,9 +151,12 @@ section ul {
     .container {
         padding: 0 10px;
     }
+
+    section h1 {
+        font-size: 24px;
+    }
 }
 
-/* CSS for Scroll to Top Button */
 /* CSS for Scroll to Top Button */
 .scroll-to-top-btn {
     position: fixed;
@@ -164,51 +176,57 @@ section ul {
     opacity: 0.7;
 }
 
+/* Paragraph styles */
 p {
     text-align: justify;
 }
 
+/* Skills List */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
 }
 
 .skill {
-    flex: 0 0 22.33%; /* Three skills per row */
+    flex: 0 0 17%; /* Slightly reduced width to decrease box size from the right side */
     padding: 10px;
     box-sizing: border-box;
-
-border: 2px solid #3498db; /* Border color */
-    border-radius: 30px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  margin-bottom: 15px;
-  margin-rignt: 15px;
-  padding-left: 70px; /* Adjust this value to decrease the left side */
+    border: 3px solid #3498db; /* Border color */
+    border-radius: 25px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin-bottom: 25px;
+    margin-right: 13px;
 }
 
 @media only screen and (max-width: 767px) {
-            .skill {
-                width: 100%; /* Set width to 100% for single-column layout on smaller screens */
-            }
+    .skill {
+        width: 100%; /* Set width to 100% for single-column layout on smaller screens */
+    }
 }
-
-.skill:not(:last-child) {
-    margin-right: 10px; /* Right side margin for all projects except the last one */
-}
-
-
 
 .skill img {
     width: 50px;  /*Adjust image size as needed*/ 
     height: 50px;
-    margin-bottom: 10px;
-  
+    margin-top: 2px;
+    margin-bottom: 1px;
 }
 
 .skill-info {
     text-align: left;
+    margin-bottom: 1px;
+    margin-right: 10px;
 }
+
+.skill-info h2 {
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.skill-info p {
+  margin-top: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
     .skill {
@@ -216,10 +234,12 @@ border: 2px solid #3498db; /* Border color */
     }
 }
 
-
+/* Info Table */
 .info-table {
-    width: 70%;  /* Overall width */
+    width: 100%;  /* Full width for better responsiveness */
     border-collapse: collapse;
+    font-size: 14px; /* Default font size */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
 .info-table th, .info-table td {
@@ -230,21 +250,41 @@ border: 2px solid #3498db; /* Border color */
 
 .info-table th {
     background-color: #f2f2f2;
-    
+    font-weight: bold;
 }
 
 .info-table td:nth-child(2) {
     width: 75%; /* Adjust the width as needed */
 }
-section a {
-  font-weight: bold;
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .info-table {
+        font-size: 12px; /* Slightly smaller font size on smaller screens */
+    }
+
+    .info-table th, .info-table td {
+        padding: 8px; /* Reduced padding for smaller screens */
+    }
+
+    .info-table td:nth-child(2) {
+        width: auto; /* Reset width for better fitting on small screens */
+    }
+
+    /* Optional: Add horizontal scrolling for smaller screens */
+    .info-table-wrapper {
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
 }
 
-
+section a {
+    font-weight: bold;
+}
 
 .education-table {
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
+    font-size: 14px; /* Default font size */
 }
 
 .education-table th, .education-table td {
@@ -255,43 +295,67 @@ section a {
 
 .education-table th {
     background-color: #f2f2f2;
+    font-weight: bold;
 }
 
-.education-table th:nth-child(1),
-.education-table td:nth-child(1) {
-    width: 2%; /* Adjust the width as needed for the first column */
+.education-table th:nth-child(1), .education-table td:nth-child(1) {
+    width: 5%; /* Adjust the width as needed for the first column */
     text-align: center;
-  font-weight: bold;
 }
 
-.education-table th:nth-child(2),
-.education-table td:nth-child(2) {
-    width: 10%; /* Adjust the width as needed for the second column */
+.education-table th:nth-child(2), .education-table td:nth-child(2) {
+    width: 30%; /* Adjust the width as needed for the second column */
 }
 
-.education-table th:nth-child(3),
-.education-table td:nth-child(3) {
-    width: 10%; /* Adjust the width as needed for the third column */
+.education-table th:nth-child(3), .education-table td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed for the third column */
 }
 
-.education-table th:nth-child(4),
-.education-table td:nth-child(4) {
-    width: 4%; /* Adjust the width as needed for the fourth column */
-  text-align: center;
-  font-weight: bold;
+.education-table th:nth-child(4), .education-table td:nth-child(4) {
+    width: 15%; /* Adjust the width as needed for the fourth column */
+    text-align: center;
 }
 
-.education-table th:nth-child(5),
-.education-table td:nth-child(5) {
-    width: 1%; /* Adjust the width as needed for the fifth column */
+.education-table th:nth-child(5), .education-table td:nth-child(5) {
+    width: 20%; /* Adjust the width as needed for the fifth column */
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .education-table {
+        font-size: 9px; /* Smaller font size on smaller screens */
+    }
 
+    .education-table th, .education-table td {
+        padding: 3px; /* Reduced padding for smaller screens */
+    }
 
+    .education-table th:nth-child(1), .education-table td:nth-child(1) {
+        width: 10%; /* Adjust width for better fit on small screens */
+    }
 
+    .education-table th:nth-child(2), .education-table td:nth-child(2) {
+        width: 25%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(3), .education-table td:nth-child(3) {
+        width: 25%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(4), .education-table td:nth-child(4) {
+        width: 15%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(5), .education-table td:nth-child(5) {
+        width: 15%; /* Adjust width for better fit on small screens */
+    }
+}
+
+/* Certificate Table */
 .certificate-table {
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
+    font-size: 14px; /* Adjust the font size for better readability */
 }
 
 .certificate-table th, .certificate-table td {
@@ -302,63 +366,55 @@ section a {
 
 .certificate-table th {
     background-color: #f2f2f2;
+    font-weight: bold;
 }
 
-.certificate-table th:nth-child(1),
-.certificate-table td:nth-child(1) {
-    width: 0%; /* Adjust the width as needed for the first column */
+.certificate-table th:nth-child(1), .certificate-table td:nth-child(1) {
+    width: 10%; /* Adjust the width as needed for the first column */
     text-align: center;
-  font-weight: bold;
 }
 
-.certificate-table th:nth-child(2),
-.certificate-table td:nth-child(2) {
-    width: 5%; /* Adjust the width as needed for the second column */  
+.certificate-table th:nth-child(2), .certificate-table td:nth-child(2) {
+    width: 40%; /* Adjust the width as needed for the second column */
 }
 
-.certificate-table th:nth-child(3),
-.certificate-table td:nth-child(3) {
-    width: 0%; /* Adjust the width as needed for the third column */
-  font-weight: bold;
-  text-align: center;
+.certificate-table th:nth-child(3), .certificate-table td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed for the third column */
+    text-align: center;
 }
 
-.certificate-table th:nth-child(4),
-.certificate-table td:nth-child(4) {
-    width: 4%; /* Adjust the width as needed for the fourth column */
+.certificate-table th:nth-child(4), .certificate-table td:nth-child(4) {
+    width: 20%; /* Adjust the width as needed for the fourth column */
 }
 
-.certificate-table th:nth-child(5),
-.certificate-table td:nth-child(5) {
-    width: 1%; /* Adjust the width as needed for the fifth column */
-  
+@media (max-width: 767px) {
+    .certificate-table {
+        font-size: 10px; /* Reduce font size on smaller screens */
+    }
+    .certificate-table th, .certificate-table td {
+        padding: 6px; /* Reduce padding for better fit */
+    }
 }
-.project li{
-  font-family: Georgia, serif;
-  font-size: 18px;
-  padding-left: 20px;
+
+/* Project styles */
+.project li {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    padding-left: 20px;
     border: 1px solid #ff9a9e;
     border-radius: 5px;
     padding: 5px;
     margin: 5px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      position: relative;
-  
-
+    position: relative;
 }
 
 .project ul {
-  list-style-position: inside;  /* Ensures the bullet is inside the padding */
+    list-style-position: inside;  /* Ensures the bullet is inside the padding */
 }
 
 .project h2 {
-  color: purple;
-}
-
-
-.skill-info p{
-  font-weight: bold;
-  color: green;
+    color: purple;
 }
 
 .project img {
@@ -367,12 +423,31 @@ section a {
     margin-bottom: -15px;
 }
 
-
 .project {
     border: 2px solid #3498db; /* Border color */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
+.footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+        font-size: 12px;
+    }
+}
