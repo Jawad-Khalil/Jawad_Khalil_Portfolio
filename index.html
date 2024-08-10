@@ -1,377 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jawad's Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jawad's Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="top-menu">
-            <div class="center">
-                <h1>Jawad Khalil</h1>
-                <div class="contact_info">
-                    <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/envelope.png?raw=true" width="20" height="20" alt="https://icons8.com/icon/124377/circled-envelope"/>
-                    <a style="color: pink" href="https://mail.google.com/mail/u/0/#inbox?compose=DXDwSWwxqRCPQCsqbGDPChBDssKqCBgjCGdwVrZqMzVTWzzCjsbGMCVztLwDtggDkXpXcJHLtwqFspdxKJxSKvzKHSzhRrmWzPGrsXtqGxVtqDdQnvGJTMqB" target="_blank">iamjawadkhalil@gmail.com</a>
-                </div>
-                <div style="clear:both;"></div>
-                <div class="contact_info">
-                  <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/phone.png?raw=true" width="20" height="20" alt="https://icons8.com/icon/124377/circled-envelope"/>
-                  +923481552147
-                </div>
 
-            </div>
-        </div>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#personal-info">Personal Information</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+  <header>
+    <h1>Jawad's Projects</h1>
+    <div class="center">
+      <div class="contact_info">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/envelope.png?raw=true" width="20" height="20" alt="https://icons8.com/icon/124377/circled-envelope" />
+        <a style="color: white" href="https://mail.google.com/mail/u/0/#inbox?compose=DXDwSWwxqRCPQCsqbGDPChBDssKqCBgjCGdwVrZqMzVTWzzCjsbGMCVztLwDtggDkXpXcJHLtwqFspdxKJxSKvzKHSzhRrmWzPGrsXtqGxVtqDdQnvGJTMqB" target="_blank">iamjawadkhalil@gmail.com</a>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="contact_info">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/phone.png?raw=true" width="20" height="20" alt="https://icons8.com/icon/124377/circled-envelope" />
+        +923481552147
+      </div>
+      <nav class="navbar">
+        <button class="menu-btn" id="menuBtn">&#9776; Menu</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#data-analysis">Data Analysis</a></li>
+          <li><a href="#website-portfolio">Single Page Website Portfolio </a></li>
+          <li><a href="#latex-compilation">Compiled Some Books with LaTeX</a></li>
+          <li><a href="#python-parsing">Data Parsing with Python</a></li>
+          <li><a href="#practical-teaching">A Guided Project of Practical Teaching</a></li>
+          <li><a href="#wholesale-manager">Wholesale Manager</a></li>
         </ul>
-    </nav>
-<section id="profile-image">
-    <div class="profile-container">
-        <div class="profile-image">
-            <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/facebook.png?raw=true" alt="Profile Image">
-        </div>
-    </div>
-</section>
-    <main>
-        <section id="about">
-            <div class="container">
-                <h1>About Me</h1>
-               <div style="clear:both;"></div>
-               <p>Hi, I'm <b>Jawad Khalil!</b><img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/waving-hand.png?raw=true" width="30px"/> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am from <b>Azad Jammu and Kashmir, Pakistan</b>. Currently, I am a student doing an <b>MSc in Industrial Mathematics</b> online. I did an <b>MSc in Mathematics</b>. On this page, you will get information about my <b>Personal Information</b>, <b>Skills</b>, <b>Projects</b>, <b>Education</b>, <b>Languages</b>, <b>Certification</b>, <b>Diplomas</b>, <b>Experiences</b>, and much more. Currently, I am looking to start a career in a reputable organization using my education with the utilization of my skills as mentioned here to secure a challenging position and to expand my learning and knowledge.</p>
-            </div>
-        </section>
-        <section id="personal-info">
-            <div class="container">
-                <!-- Add your personal information table here -->
-              <h1>Personal Information</h1>
-              <table class="info-table">
-                  <tr>
-                      <th>Name:</th>
-                      <td><b>Jawad Khalil</b></td>
-                  </tr>
-                  <tr>
-                      <th>Nationality:</th>
-                      <td><b>Pakistani</b></td>
-                  </tr>
-                  <tr>
-                      <th>Email:</th>
-                      <td><b>
-                        <a style="color: blue" href="https://mail.google.com/mail/u/0/#inbox?compose=DXDwSWwxqRCPQCsqbGDPChBDssKqCBgjCGdwVrZqMzVTWzzCjsbGMCVztLwDtggDkXpXcJHLtwqFspdxKJxSKvzKHSzhRrmWzPGrsXtqGxVtqDdQnvGJTMqB" target="_blank">iamjawadkhalil@gmail.com</a></b>
-                      </td>
-                  </tr>
-                  <tr>
-                      <th>Gender:</th>
-                      <td>Male</td>
-                  </tr>
-                  <tr>
-                      <th>Marital Status:</th>
-                      <td>Single</td>
-                  </tr>
-                  <tr>
-                      <th>Professional Status:</th>
-                      <td>Student</td>
-                  </tr>
-                  <tr>
-                      <th>Languages:</th>
-                      <td><b>English (Good), Urdu (Excellent), & Hindko (Excellent)</b</td>
-                  </tr>
-                  <tr>
-                      <th>Age:</th>
-                      <td>26 Years</td>
-                  </tr>
-                  <tr>
-                      <th>Home Address:</th>
-                      <td>Panjera, district and tehsil Kotli Azad Jammu and Kashmir, Pakistan</td>
-                  </tr>
-                  <tr>
-                      <th>Mobile:</th>
-                      <td>+923481552147</td>
-                  </tr>
-              </table>
-            </div>
-        </section>
-        <section id="education">
-            <div class="container">
-                <h1>Educational Details</h1>
-                <!-- Add your educational details table here -->
-                <table class="education-table">
-                  <tr>
-                      <th>No.</th>
-                      <th>Degree/Certificate</th>
-                      <th>University/Board</th>
-                      <th>Year</th>
-                      <th>Percentage</th>
-                  </tr>
-                  <tr>
-                      <td>1</td>
-                    <td><b>Matric (Science)</b><br>(2-Years)</td>
-                      <td><a href="https://www.ajkbise.net/" target="_blank">AJK Mirpur Board</td>
-                      <td>2012-2014</td>
-                      <td><b>72.45%</b></td>
-                  </tr>
-                  <tr>
-                      <td>2</td>
-                    <td><b>FSc (Pre-Engineering)</b><br>(2-Years)</td>
-                      <td><a href="https://www.ajkbise.net/" target="_blank">
-                        AJK Mirpur Board</td>
-                      <td>2014-2016</td>
-                      <td><b>63.9%</b></td>
-                  </tr>
-                  <tr>
-                      <td>3</td>
-                      <td><b>BSc (Double Math & Physics)</b><br>(2-Years)</td>
-                      <td><a href="https://ajku.edu.pk/" target="_blank">AJK Muzaffarabad University</a></td>
-                      <td>2016-2018</td>
-                      <td>50.67%</td>
-                  </tr>
-                  <tr>
-                      <td>4</td>
-                      <td><b>MSc (Mathematics)</b><br>(2-Years)</td>
-                      <td><a href="https://www.uokajk.edu.pk/" target="_blank">University of Kotli AJK</a></td>
-                      <td>2019-2022</td>
-                      <td><b>74.82%<b></td>
-                  </tr>
-                  <tr>
-                      <td>5</td>
-                      <td><b>MA (Teacher Education)</b><br>(2-Years)</td>
-                      <td><a href="https://www.aiou.edu.pk/" target="_blank">AIOU Islamabad</a></td>
-                      <td>2020-2023</td>
-                      <td><b>63.75%</b></td>
-                  </tr>
-                  <!-- Add more rows as needed -->
-              </table>
-            </div>
-        </section>
-        <section id="certificates">
-            <div class="container">
-                <h1>Certificates/Diplomas</h1>
-                <!-- Add your certificates/diplomas table here -->
-                <table class="certificate-table">
-                    <tr>
-                        <th>No.</th>
-                        <th>Certificate/Diploma</th>
-                        <th>Year</th>
-                        <th>Institution</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><b><a href="https://drive.google.com/file/d/1M8bpn64-Zdd-CnmNStz4Oir5mRUjYlfd/view?usp=sharing" target="_blank">Diploma of IT</a></b><br>(1-Year)</td>
-                        <td>2018</td>
-                        <td>
-                          <a href="https://stapakistan.com/" target="_blank">Skill Testing Association Pakistan (STA)</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><b><a href="https://drive.google.com/file/d/1N0F5DVcsh4kXod38emflOR-Lz1arHewl/view?usp=sharing" target="_blank">National Financial Literacy Program for Youth</a></b></td>
-                        <td>2021</td>
-                        <td><a href="https://nibaf.sbp.org.pk/" target="_blank">National Institute of Banking and Finance, Pakistan</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><b><a href="https://drive.google.com/file/d/1NQ3dpAhGd3x-99OS-sc5F4vSnJDPCHD_/view?usp=sharing" target="_blank">Data Analytics</a></b><br>(6-Months)</td>
-                        <td>2021</td>
-                        <td><a href="https://www.coursera.org/professional-certificates/google-data-analytics">Google Data Analytics</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><b><a href="https://drive.google.com/file/d/1MOw66avz6z0fChn4Lz55zoYSm7lzpFO2/view?usp=sharing" target="_blank">Guided Practical Teaching</a></b><br>(36-Days)</td>
-                        <td>2022</td>
-                        <td><a href="https://web.facebook.com/p/Govt-Boys-Inter-college-panjera-100063748788280/?_rdc=1&_rdr">Government Boys Intermediate College Panjera</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><b><a href="https://drive.google.com/file/d/1iZDsZyZiGRed6bxa8wwHptg12b4lH2AT/view?usp=sharing" target="_blank">PTE Academic</a></b></td>
-                        <td>2023</td>
-                        <td><a href="https://www.pearsonpte.com/pte-academic" target="_blank">Pearson Test of English</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><b>Scientific Programming with Python</b><br>(6-Months)</td>
-                        <td>2024</td>
-                        <td><a href="https://www.mathematik.tu-dortmund.de/fakultaet/studium-lehre/vorlesungsverzeichnis/detail/lecnumber=011516,lecsemester=WS2324,lecgroup=0,sortlistby=lecid" target="_blank">TU Dortmund University, Germany</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><b><a href="https://drive.google.com/file/d/1MbfBXimHmnxw444xuesu7PjT1X3XQ2hX/view?usp=sharing" target="_blank">Python for Everybody</a></b><br>(32-Weeks)</td>
-                        <td>2024</td>
-                        <td><a href="https://www.coursera.org/specializations/python" target="_blank">University of Michigan, USA</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><b><a href="https://drive.google.com/file/d/1MOoIgLOfwH6uToAe2t7i-FMTf0ohRK3p/view?usp=sharing" target="_blank">Introduction to Programming with MATLAB</a></b><br>(9-Weeks)</td>
-                        <td>2024</td>
-                        <td><a href="https://www.coursera.org/learn/matlab" target="_blank">Vanderbilt University, USA</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td><b><a href="https://drive.google.com/file/d/1Mzpzm3EvOdmeMSwfJAReov8jY3A-ZF7m/view?usp=sharing" target="_blank">Introduction to Web Development with HTML, CSS, JavaScript</a></b><br>(5-Weeks)</td>
-                        <td>2024</td>
-                        <td><a href="https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript" target="_blank">International Business Machines Corporation (IBM)</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <section id="skills">
-            <div class="container">
-                <h1>Skills with Experience</h1>
-                <!-- Add your skills section here -->
-                <div class="skills-list">
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Python_org_logo.png?raw=true" alt="Python Icon">
-                        <div class="skill-info">
-                          <h2>Python</h2>
-                            <p>13 Months of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Latex_done.png?raw=true" alt="Latex Icon">
-                      <div class="skill-info">
-                            <h2>Latex</h2>
-                            <p>14 Months of experience</p>
-                      </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Data_Entry.png?raw=true" alt="Data Icon">
-                        <div class="skill-info">
-                            <h2>Data Entry</h2>
-                            <p>2.5 Years of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Teaching.png?raw=true" alt="Teaching Icon">
-                        <div class="skill-info">
-                            <h2>Teaching</h2>
-                            <p>3 Years of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Office3.png?raw=true" alt="Office Icon">
-                        <div class="skill-info">
-                            <h2>MS Office</h2>
-                            <p>3 Years of experience</p>
-                        </div>
-              </div>
-                                      <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/wordpress2.png?raw=true" alt="WordPress Icon">
-                        <div class="skill-info">
-                            <h2>WordPress</h2>
-                            <p>13 Months of experience</p>
-                        </div>
-                    </div>
-                                      <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/spreadsheet3.png?raw=true" alt="Spreadsheet Icon">
-                        <div class="skill-info">
-                            <h2>Spreadsheets</h2>
-                            <p>1 Year of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/SQL5.png?raw=true" alt="SQL Icon">
-                        <div class="skill-info">
-                            <h2>SQL</h2>
-                            <p>6 Months of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/HTML.png?raw=true" alt="SQL Icon">
-                        <div class="skill-info">
-                            <h2>HTML, CSS, & JavaScript</h2>
-                            <p>9 Months of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Gpt.png?raw=true" alt="Manager Icon">
-                        <div class="skill-info">
-                            <h2>GPT Prompt</h2>
-                            <p>1 Year of experience</p>
-                        </div>
-                    </div>
+      </nav>
+  </header>
 
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/sales_manager.png?raw=true" alt="Manager Icon">
-                        <div class="skill-info">
-                            <h2>Sales Managment</h2>
-                            <p>6 Months of experience</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/managment.png?raw=true" alt="Management Icon">
-                        <div class="skill-info">
-                            <h2>Simple Managment</h2>
-                            <p>2 Years of experience</p>
-                        </div>
-                    </div>
-            <!-- Add more skills as needed -->
-                </div>
-            </div>
-        </section>
-        <section id="projects">
-            <div class="container">
-                <h1>Projects</h1>
-                <!-- Add your projects section here -->
-                <div class="project">
-                    <div style="clear:both;"></div>
-                    <h2><a href="https://www.coursera.org/learn/google-data-analytics-capstone?specialization=google-data-analytics" target="_blank">Project 1: Data Analysis</a>&nbsp;&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Python_org_logo.png?raw=true" alt="Python Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/spreadsheet3.png?raw=true" alt="Spreadsheet Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/SQL5.png?raw=true" alt="SQL Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Data_Entry.png?raw=true" alt="Data Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Office3.png?raw=true" alt="Office Icon">, &&nbsp;<img src="https://download.logo.wine/logo/R_(programming_language)/R_(programming_language)-Logo.wine.png" alt="R Icon"></h2>                    
-                    <ul>
-                      <li>Utilized my programming skills to conduct a thorough analysis of data from a bicycle company, gaining valuable insights and providing strategic suggestions for improvement.</li>
-                    </ul>
-                    <hr>
-                </div>
-                <div class="project">
-                    <h2>Project 2: Wholesale Manager&nbsp;&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/sales_manager.png?raw=true" alt="Manager Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Data_Entry.png?raw=true" alt="Data Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/managment.png?raw=true" alt="Mangement Icon">, &nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Office3.png?raw=true" alt="Office Icon">, &&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/spreadsheet3.png?raw=true" alt="Spreadsheet Icon"></h2>
-                    <ul>
-                      <li>Enhanced the profitability of Sakhi Autos Kotli, a wholesale shop, by effectively applying my managerial expertise.</li>
-                    </ul>
-                    <hr>
-                </div>
-                <div class="project">
-                    <h2>Project 3: Compiled Some Books with Latex&nbsp;&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Latex_done.png?raw=true" alt="Latex Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Data_Entry.png?raw=true" alt="Data Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Gpt.png?raw=true" alt="GPT Icon">, &&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Office3.png?raw=true" alt="Office Icon"></h2>
-                    <ul>
-                      <li>Compiled four comprehensive books using LaTeX, expertly assembling video and course content from four distinct educational courses.</li>
-                    </ul>
-                    <hr>
-                </div>
-                <div class="project">
-                    <h2>Project 4: Single Page Website Portfolio&nbsp;&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/HTML.png?raw=true" alt="HTML Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Gpt.png?raw=true" alt="GPT Icon">, &&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Data_Entry.png?raw=true" alt="Data Icon"></h2>
-                    <ul>
-                      <li>Created a <b>Single-Page Website Portfolio</b> to test my skills in <b>HTML5, CSS, JavaScript</b>, and some other programming languages.
-                        </li>
-                      <li>Created My <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/" target="_blank"><b>GitHub Site Portfolio</b></a> (current page) with the help of HTML, CSS, and JavaScript.
-                    </ul>
-                  <hr>
-                </div>
-                <div class="project">
-                    <h2>Project 5: Data Parsing with Python&nbsp;&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Python_org_logo.png?raw=true" alt="Python Icon">,&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Web_data.png?raw=true" alt="Data Icon">, &&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Data_Entry.png?raw=true" alt="Data Icon"></h2>
-                    <ul>
-                        <li>Applied Python programming to automate the login process and retrieve necessary data from a website effortlessly.</b>.</li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <h2>Project 6: A Guided Project of Practical Teaching&nbsp;&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/Teaching.png?raw=true" alt="Teaching Icon">&nbsp;&&nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/managment.png?raw=true" alt="Teaching Icon"></h2>
-                    <ul>
-                        <li>Completed a hands-on teaching project at Government Boys Inter College Panjera, under the expert guidance of Dr. Makhdoom Ali Sead, the esteemed Head of the Department of Education at the University of Kotli AJK. This immersive experience allowed me to apply theoretical knowledge in a practical setting, enhancing my teaching skills and gaining valuable insights from a distinguished educator.</li>
-                    </ul>
-                </div>  
-            </div>
-        </section>
-    </main>
-  <a href="#" id="scrollToTopBtn" class="scroll-to-top-btn" title="Scroll to Top">&uarr;</a>
-    <script src="script.js"></script>
-<footer class="footer">
-    <div class="footer-content">
-        <p>&copy; <span id="footerYear"></span> Jawad Khalil. All rights reserved.</p>
-    </div>
-</footer>
+  <div class="welcome">
+    <h2>Welcome &nbsp;<img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/PNGs_and_other_files/waving-hand.png?raw=true" width="30px" alt="Welcome"></h2>
+    <p>Welcome to <b>Jawad's Projects</b> page. Here, you'll find detailed descriptions of each project. To visit <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/" target="_blank"><b>Jawad's Portfolio</b></a> page, please click <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/" target="_blank"><b>here</b></a>. This page includes information on the <b>Project Name</b>, <b>Skills</b> utilized, <b>Role</b> during the project, <b>Job</b> responsibilities, <b>Overview</b> of the project, essential <b>Links</b>, project <b>Duration</b>, <b>Challenges and Solutions</b> faced, <b>Team Information</b>, <b>Achievements</b>, and project <b>Previews</b>.</p>
 
+  </div>
+  <section class="projects-details-section">
+    <!-- Project 1 -->
+
+    <div id="data-analysis" class="project">
+      <h2>Data Analysis</h2>
+      <div class="skills">
+        <h3>Skills Used:</h3>
+        <ul class="skills-list">
+          <li>Spreadsheets</li>
+          <li>SQL</li>
+          <li>R</li>
+          <li>Python</li>
+          <li>Data Visualization</li>
+          <li>Data Entry</li>
+          <li>MS Office</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Job:</h3>
+        <p>Perform a detailed analysis of the company's data, leading to well-informed recommendations for improving overall profitability.</p>
+      </div>
+      <div class="role">
+        <h3>Role:</h3>
+        <p><b>Data Analyst</b></p>
+      </div>
+      <div class="overview">
+        <h3>Overview:</h3>
+        <p>The key things in the Data Analysis project are:</p>
+        <ul>
+          <li><strong>Comprehensive Data Analysis</strong>: Used programming skills to carefully look at the sales and operations data of a well-known bicycle company.</li>
+          <li><strong>Insightful Findings</strong>: Identified key trends and patterns, uncovering critical insights from the data.</li>
+          <li><strong>Strategic Recommendations</strong>: Proposed actionable suggestions based on data-driven insights to optimize company performance and foster growth.</li>
+        </ul>
+      </div>
+
+      <div class="links">
+        <h3>Links:</h3>
+        <ul>
+          <li><a href="https://posit.cloud/content/6326840"><b>Click here</b></a> to view the work done by <strong>Jawad</strong> (if you have a Posit Cloud account) or <a href="https://www.coursera.org/learn/google-data-analytics-capstone?specialization=google-data-analytics" target="_blank"><b>Click here</b></a> to visit the <b>Complete Case Study of the Data Analysis</b>.</li>
+          <li><a href="https://drive.google.com/file/d/1oo9npgvX1E2rXsWNnNsDbCwPqKatOhIJ/view?usp=sharing" target="_blank"><b>Click here</b></a> to view the <b>Certificate</b>.</li>
+          <li><a href="https://drive.google.com/file/d/1sd870Gn2tKf7jzW8PsRsGVKHh4VgcfXF/view?usp=sharing" target="_blank"><b>Click here</b></a> to view the <b>Data Analytics Professional Certificate</b>.</li>
+        </ul>
+      </div>
+
+      <div class="duration">
+        <h3>Duration:</h3>
+        <p>6 Days in Aug 2023</p>
+      </div>
+
+      <div class="challenges">
+        <h3>Challenges and Solutions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Handling <b>large datasets</b> on the free Posit Cloud (online R environment) account.</td>
+              <td><b>Reduced</b> the <b>range of the Data.</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="client-team">
+        <h3>Client/Team Information:</h3>
+        <p>Client: Google on Coursera</p>
+        <p>Team: Only Jawad</p>
+      </div>
+      <div class="achievements">
+        <h3>Key Achievements:</h3>
+        <ul class="achievements-list">
+          <li>Successfully analyzed the Dataset.</li>
+          <li>Got some insightful findings.</li>
+          <li>Presented some recommendations.</li>
+          <li>Strengthened capabilities in data analysis.</li>
+        </ul>
+      </div>
+
+      <div class="previews">
+        <h3>Previews:</h3>
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide1.PNG?raw=true" alt="Slide1.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide2.PNG?raw=true" alt="Slide2.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide3.PNG?raw=true" alt="Slide3.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide4.PNG?raw=true" alt="Slide4.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide5.PNG?raw=true" alt="Slide5.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide6.PNG?raw=true" alt="Slide6.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/Slide7.PNG?raw=true" alt="Slide7.PNG">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/R_case.PNG?raw=true" alt="R Work">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/GDA_certificate.PNG?raw=true" alt="GDA Certificate">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/GDA_badge.PNG?raw=true" alt="GDA Badge">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Google_Data_Analytics/GDA_capstone.PNG?raw=true" alt="GDA Capstone">
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+
+    <div id="website-portfolio" class="project">
+      <h2>Single Page Website Portfolio</h2>
+
+      <div class="skills">
+        <h3>Skills Used:</h3>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Data Entry</li>
+          <li>Problem Solving</li>
+          <li>Creative Thinking</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Job:</h3>
+        <p>Create a simple single-page Portfolio by using HTML, CSS, and Javascript.</p>
+      </div>
+      <div class="role">
+        <h3>Role:</h3>
+        <p>Front-end Developer</p>
+      </div>
+      <div class="overview">
+        <h3>Overview:</h3>
+        <ul>
+          <li><strong>Crafted a <a href="https://jawad-khalil.github.io/Introduction_to_Web_Development_with_HTML_CSS_JavaScript/" target="_blank">Single-Page Website Portfolio</a>:</strong> Showcased my expertise in HTML5, CSS, JavaScript, and various other programming languages by developing a sleek and responsive single-page website portfolio.</li>
+          <li><strong>Developed <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/" target="_blank">My GitHub Site Portfolio</a>:</strong> Utilized HTML, CSS, and JavaScript to design and launch a comprehensive <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/">portfolio</a> on GitHub, highlighting my projects and skills in a professional and accessible manner.</li>
+          <li><strong>Designed a Detailed Project(current) Page:</strong> Created an individual page for each project within my portfolio, providing in-depth descriptions and insights into the development process and technologies used.</li>
+        </ul>
+      </div>
+
+      <div class="links">
+        <h3>Links:</h3>
+        <ul>
+          <li>Visit the work done by Jawad on GitHub <a href="https://github.com/Jawad-Khalil/Introduction_to_Web_Development_with_HTML_CSS_JavaScript" target="_blank"><b>here</b></a>.</li>
+          <li>Visit the complete case <a href="https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript" target="_blank"><b>here</b></a>.</li>
+          <li>Visit the project <b>Portfolio <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/">here</a></b>.</li>
+          <li>Visit <b>GitHub Site Portfolio <a href="https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/">here</a></b>.</li>
+          <li>Visit the Portfolio <b>Project Page here</b></li>
+        </ul>
+      </div>
+
+      <div class="duration">
+        <h3>Duration:</h3>
+        <p>10 days in Mar 2024.</p>
+      </div>
+
+      <div class="challenges">
+        <h3>Challenges and Solutions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Less knowledge</b> of HTML, CSS, and JavaScript.</td>
+              <td>First <b>improved skills</b> in HTML, CSS, and JavaScript.</td>
+            </tr>
+            <tr>
+              <td><b>Hosting</b> my PNGs and <b>publishing the portfolio.</b></td>
+              <td>Created some <b>GitHub repositories</b> to publish the portfolio (static website).</td>
+            </tr>
+            <tr>
+              <td>The portfolio was looking good on big screens but <b>bad response on smaller screens</b>.</td>
+              <td>Learned some CSS codes to fit the site on smaller screens <b>(mobile-responsive site)</b>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="client-team">
+        <h3>Client/Team Information:</h3>
+        <p>Client: IBM on Coursera</p>
+        <p>Team: Only Jawad</p>
+      </div>
+
+      <div class="achievements">
+        <h3>Key Achievements:</h3>
+        <ul class="achievements-list">
+          <li>Created a simple portfolio and a GitHub hosted portfolio.</li>
+          <li>Learned some advance features of GitHub.</li>
+          <li>Made the portfolios mobile-responsive.</li>
+          <li>Enhanced proficiency in CSS, HTML, and JavaScript.</li>
+        </ul>
+      </div>
+
+      <div class="previews">
+        <h3>Previews:</h3>
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/simple_project.png?raw=true" style="width: 500px;" alt="Simple Portfolio">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Portfolio_screenshot.png?raw=true" style="width: 255px;" alt="GitHub Portfolio Screenshot">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/HTML_Project.PNG?raw=true" alt="Project's page screenshot">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/simple_project.png?raw=true" style="width: 400px;" alt="Project's page screenshot">
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+
+    <div id="latex-compilation" class="project">
+      <h2>Compiled Some Books with LaTeX</h2>
+
+      <div class="skills">
+        <h3>Skills Used:</h3>
+        <ul class="skills-list">
+          <li>Latex</li>
+          <li>Data Entry</li>
+          <li>MATLAB</li>
+          <li>HTML, CSS, and JavaScript</li>
+          <li>SEO</li>
+          <li>Problem Solving</li>
+          <li>Creative Thinking</li>
+          <li>Translation</li>
+          <li>Writing</li>
+
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Job:</h3>
+        <p>Utilize LaTeX to craft four in-depth books, each based on the detailed video and course materials from four separate courses.</p>
+      </div>
+
+      <div class="role">
+        <h3>Role:</h3>
+        <p>LaTeX Writer</p>
+      </div>
+
+      <div class="overview">
+        <h3>Overview:</h3>
+        <ul>
+          <li><strong>302-Page Notebook on MATLAB Programming:</strong> Developed a comprehensive notebook titled "Introduction to Programming with MATLAB" by meticulously studying course video content.</li>
+          <li><strong>48-Page LaTeX Basics Notebook:</strong> Authored a detailed guide on the basics of LaTeX, covering essential concepts and techniques.</li>
+          <li><strong>423-Page Web Development Masterpiece:</strong> Created an extensive notebook on "Introduction to Web Development with HTML, CSS, and JavaScript" after in-depth study, showcasing my proficiency with LaTeX and web development skills.</li>
+          <li><strong>61-Page SEO Course Compilation:</strong> Compiled a thorough notebook on "SEO (Search Engine Optimization)" from course videos, demonstrating my ability to translate learning into structured, valuable content.</li>
+        </ul>
+      </div>
+
+      <div class="duration">
+        <h3>Duration:</h3>
+        <p>7 Months (December 2023 - Jul 2024)</p>
+      </div>
+
+      <div class="challenges">
+        <h3>Challenges and Solutions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Zero knowledge</b> of <b>LaTeX</b> programming.</td>
+              <td><b>Learned some basics</b> to start compiling simple PDFs.</td>
+            </tr>
+            <tr>
+              <td><b>Too much time</b> required to compile 4 books.</td>
+              <td><b>Balanced daily life</b> with the project by planning substantial time, effort, and passion for the project.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="client-team">
+        <h3>Client/Team Information:</h3>
+        <p>Client: Different Online Platforms.</p>
+        <p>Team: Only Jawad</p>
+      </div>
+
+      <div class="achievements">
+        <h3>Key Achievements:</h3>
+        <ul class="achievements-list">
+          <li>Developed proficiency in LaTeX by learning its basic principles and some advanced features, empowering me to leverage its full power for technical writing.</li>
+          <li>Engaged in and completed four comprehensive courses, each playing a crucial role in the project's successful outcome.</li>
+          <li>Transformed study videos into comprehensive books, showcasing a successful blend of content extraction and compilation.</li>
+        </ul>
+      </div>
+
+      <div class="previews">
+        <h3>Previews:</h3>
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/MATLAB_content.PNG?raw=true" alt="MATLAB Contents">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/MATLAB_plotting.PNG?raw=true" alt="MATLAB Plotting">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/latex_content.PNG?raw=true" alt="LaTeX Contents">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/latex_table.PNG?raw=true" alt="LaTeX Table">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/html_content.PNG?raw=true" alt="HTML Contents">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/html_fiddle.PNG?raw=true" alt="HTML Fiddle">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/SEO_content.PNG?raw=true" alt="SEO Contents">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Latex/SEO_linkbuilding.PNG?raw=true" alt="SEO Link Building">
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div id="python-parsing" class="project">
+      <h2>Data Parsing with Python</h2>
+
+      <div class="skills">
+        <h3>Skills Used:</h3>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>BeautifulSoup</li>
+          <li>requests</li>
+          <li>Data Entry</li>
+          <li>Presentation</li>
+          <li>Communication</li>
+          <li>Data Extracting</li>
+          <li>Data Organizing</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Job:</h3>
+        <p>Automatic login to a website and data parsing using the “Beautiful Soup” package.</p>
+      </div>
+
+      <div class="role">
+        <h3>Role:</h3>
+        <p>Python Developer</p>
+      </div>
+      <div class="overview">
+        <h3>Overview:</h3>
+        <ul>
+          <li>Automated the login process to a specific website with <strong>Python "requests"</strong>.</li>
+          <li>Utilized <strong>"BeautifulSoup"</strong> to skillfully inspect and extract the needed data from the HTML tree.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <h3>Links:</h3>
+        <ul>
+          <li>Click <a href="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/tree/main/Projects/Python/Data_Parsing" target="_blank"><b>here</b></a> to visit the work done by <b>Jawad</b> on GitHub.</li>
+          <li>You can read the presentation <a href="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Presentation.pdf" target="_blank"><b>here</b></a>.</li>
+        </ul>
+      </div>
+      <div class="duration">
+        <h3>Duration:</h3>
+        <p>2 Weeks in Jan 2024</p>
+      </div>
+
+      <div class="challenges">
+        <h3>Challenges and Solutions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Navigating a <b>vast amount of study material and research</b> to ensure thorough comprehension to complete and present the project effectively.</td>
+              <td>Overcome the challenge by creating an <b>organized study plan</b> to distill essential information from extensive research.</td>
+            </tr>
+            <tr>
+              <td>Needed <b>significant time investment</b> to complete and present the project effectively to the client.</td>
+              <td><b>Aligned daily routines</b> with project demands by planning and investing extensive time, effort, and passion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="client-team">
+        <h3>Client/Team Information:</h3>
+        <p>Client: TU Dortmund University</p>
+        <p>Team: An Instructor and Jawad</p>
+      </div>
+
+      <div class="achievements">
+        <h3>Key Achievements:</h3>
+        <ul class="achievements-list">
+          <li>Learned effectively how to use Python <b>requests</b> and <b>BeautifulSoup</b> libraries.</li>
+          <li>Completed the project on schedule following thorough research.</li>
+          <li>Crafted a highly effective and visually engaging presentation.</li>
+          <li>Executed a successful presentation and received supportive feedback.</li>
+        </ul>
+      </div>
+
+      <div class="previews">
+        <h3>Previews:</h3>
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Python_task.PNG?raw=true" alt="Project Statement">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Python_data1.PNG?raw=true" alt="Code1">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Python_data2.PNG?raw=true" alt="Code2">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Python_request.PNG?raw=true" alt="requests">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Python_step5.PNG?raw=true" alt="Step5">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Python/Data_Parsing/Step6.PNG?raw=true" alt="Step6">
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div id="practical-teaching" class="project">
+      <h2>A Guided Project of Practical Teaching</h2>
+
+      <div class="skills">
+        <h3>Skills Used:</h3>
+        <ul class="skills-list">
+          <li>Teaching</li>
+          <li>Management</li>
+          <li>Situation Handling</li>
+          <li>Communication</li>
+          <li>Problem Solving</li>
+          <li>Team Management</li>
+          <li>Critical Thinking</li>
+          <li>Creative Thinking</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Job:</h3>
+        <p>Develop and execute 30 educational lesson plans in a governmental institution within 4 Weeks.</p>
+      </div>
+
+      <div class="role">
+        <h3>Role:</h3>
+        <p>College Teacher</p>
+      </div>
+      <div class="overview">
+        <h3>Overview:</h3>
+        <ul>
+          <li><strong>Project:</strong> Successfully completed the hands-on teaching project at <a href="https://web.facebook.com/p/Govt-Boys-Inter-college-panjera-100063748788280/?_rdc=1&_rdr" target="_blank"><b>Government Boys Inter College Panjera</b></a>.</li>
+          <li><strong>Mentorship:</strong> Guided by Dr. Makhdoom Ali Sead, the esteemed <a href="https://uokajk.edu.pk/department/detail/department-of-education" target="_blank"><b>Head of the Department of Education</b></a> at the <a href="https://www.uokajk.edu.pk/" target="_blank"><b>University of Kotli AJK</b></a>.</li>
+          <li><strong>Practical Application:</strong> Translated theoretical knowledge into practical experience in a real classroom setting.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <h3>Links:</h3>
+        <ul>
+          <li>View the training certificate <a href="https://drive.google.com/file/d/1MOw66avz6z0fChn4Lz55zoYSm7lzpFO2/view?usp=sharing" target="_blank"><b>here</b></a>.</li>
+          <li>Visit the <b>Government College</b> <a href="https://web.facebook.com/p/Govt-Boys-Inter-college-panjera-100063748788280/?_rdc=1&_rdr" target="_blank"><b>here</b></a>.</li>
+        </ul>
+      </div>
+      <div class="duration">
+        <h3>Duration:</h3>
+        <p>23 Days in Sep 2022</p>
+      </div>
+
+      <div class="challenges">
+        <h3>Challenges and Solutions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Time management</b> during the presentation of lessons.</td>
+              <td><b>Planned and managed the time</b> to present the lessons effectively.</td>
+            </tr>
+            <tr>
+              <td><b>Challenges</b> in maintaining <b>student attention</b> and managing classroom <b>behavior</b> during lessons.</td>
+              <td><b>Collaborated</b> with <b>fellow teachers</b> to share strategies and implement effective techniques for maintaining student engagement and managing classroom behavior.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="client-team">
+        <h3>Client/Team Information:</h3>
+        <p>Client: Allama Iqbal Open University Islamabad</p>
+        <p>Team: Jawad, Dr. Makhdoom Ali Sead, Principal Tahir Hussain Shah, and fellow teachers.</p>
+      </div>
+
+      <div class="achievements">
+        <h3>Key Achievements:</h3>
+        <ul class="achievements-list">
+          <li>Successfully planned and delivered the lessons.</li>
+          <li>Acquired some strategies and techniques to enhance student engagement and manage classroom behavior.</li>
+          <li>Significantly enhanced teaching and communication skills.</li>
+          <li>Actively participated in co-curricular activities.</li>
+
+        </ul>
+      </div>
+
+      <div class="previews">
+        <h3>Previews:</h3>
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Teaching/Lesson_objectives-min.PNG?raw=true" alt="Lesson Objectives">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Teaching/Lesson_intro-min.PNG?raw=true" alt="Lesson Intro">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Teaching/Lesson_plan_av_aids-min.PNG?raw=true" alt="Lesson AV Aids">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Teaching/GOVT_gate-min.PNG?raw=true" alt="College Gate">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Teaching/Teaching_certificate-min.PNG?raw=true" alt="Teaching Certificate">
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Teaching/AIOU_screen-min.PNG?raw=true" alt="AIOU Web">
+
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div id="wholesale-manager" class="project">
+      <h2>6. Wholesale Manager</h2>
+
+      <div class="skills">
+        <h3>Skills Used:</h3>
+        <ul class="skills-list">
+          <li>Business Managment</li>
+          <li>MS Office</li>
+          <li>Data Entry</li>
+          <li>Spreadsheets</li>
+          <li>Wholesaling</li>
+          <li>Communication</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Job:</h3>
+        <p>Increase the revenue of "Sakhi Autos Kotli" (a wholesale shop) with the implementation of strategic business practices.</p>
+      </div>
+
+      <div class="role">
+        <h3>Role:</h3>
+        <p>Wholesale Manager</p>
+      </div>
+      <div class="overview">
+        <h3>Overview:</h3>
+        <ul>
+          <li><strong>Expertise Applied:</strong> Boosted the profitability of <b><a href="https://www.google.com/maps/place/Sakhi+auto+kotli/@33.5166834,73.9105571,15z/data=!4m6!3m5!1s0x38e02127ce223a2d:0x1b8e64ce2f955863!8m2!3d33.5166834!4d73.9105571!16s%2Fg%2F11fnqmg68f?entry=ttu" target="_blank">Sakhi Autos Kotli</a></b>, a wholesale shop.</li>
+          <li><strong>Techniques Implemented:</strong> Enhanced financial performance and drove growth for <b>Sakhi Autos Kotli</b>.</li>
+        </ul>
+      </div>
+
+      <div class="links">
+        <h3>Links:</h3>
+        <ul>
+          <li>If you wanna visit the <b>Sakhi Autos Kotli</b> please click <a href="https://www.google.com/maps/place/Sakhi+auto+kotli/@33.5166834,73.9105571,15z/data=!4m6!3m5!1s0x38e02127ce223a2d:0x1b8e64ce2f955863!8m2!3d33.5166834!4d73.9105571!16s%2Fg%2F11fnqmg68f?entry=ttu" target="_blank"><b>here</b></a>.</li>
+        </ul>
+      </div>
+
+      <div class="duration">
+        <h3>Duration:</h3>
+        <p>6 Months (Feb 2022 - Aug 2022)</p>
+      </div>
+
+      <div class="challenges">
+        <h3>Challenges and Solutions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Limited</b> proficiency in <b>business communication skills</b>.</td>
+              <td>Developed business communication skills through <b>collaboration with team members</b> and by <b>studying</b> effective client interaction <b>techniques</b>.</td>
+            </tr>
+            <tr>
+              <td><b>Faced difficulties in <b>learning and memorizing</b> the names of over <b>500 products</b>.</td>
+              <td><b>Dedicated attention</b> and successfully mastered the product names within a <b>few weeks</b>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="client-team">
+        <h3>Client/Team Information:</h3>
+        <p>Client: Malik Usman</p>
+        <p>Team: Jawad, Abbas, Malik Haider, Malik Usman, Malik Abdul-Rehman, Asif</p>
+      </div>
+
+      <div class="achievements">
+        <h3>Key Achievements:</h3>
+        <ul class="achievements-list">
+          <li>Gained comprehensive knowledge of all product names.</li>
+          <li>Developed strong business and communication skills for effective client interactions.</li>
+          <li>Successfully boosted the profit margin.</li>
+        </ul>
+      </div>
+
+      <div class="previews">
+        <h3>Previews:</h3>
+        <img src="https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/Sakhi_Autos_Kotli/Sakhi_Autos_Kotli.PNG?raw=true" alt="Address of Sakhi Autos Kotli">
+      </div>
+    </div>
+
+  </section>
+  <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
 </body>
+
 </html>
