@@ -152,10 +152,11 @@ section ul {
   }
 
   section h1 {
-    font-size: 24px;
+    font-size: 25px;
   }
-    section h2 {
-    font-size: 20px;
+
+  section h2 {
+    font-size: 18px;
     margin-bottom: 15px;
     margin-top: 1px;
   }
@@ -205,7 +206,12 @@ p {
 
 @media only screen and (max-width: 767px) {
   .skill {
-    width: 100%; /* Set width to 100% for single-column layout on smaller screens */
+    width: 48%; /* Set width to 48% for two-column layout on smaller screens */
+    margin-right: 2%; /* Add margin between the two skill boxes */
+  }
+
+  .skill:nth-child(2n) {
+    margin-right: 0; /* Remove margin-right for the second item in each row */
   }
 }
 
@@ -233,7 +239,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .skill {
-    flex: 0 0 50%; /* Two skills per row on smaller screens */
+    flex: 0 0 48%; /* Two skills per row on smaller screens */
   }
 }
 
