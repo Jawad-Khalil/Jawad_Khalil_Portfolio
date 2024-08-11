@@ -1,221 +1,220 @@
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Basic styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: white;
 }
 
 .container h1 {
-    margin-bottom: 20px; /* Adjust the value as needed */
+  margin-bottom: 20px; /* Adjust the value as needed */
 }
 
 /* Header styles */
 header {
-    background-color: #333; /* Background color for the header */
-    color: white; /* Text color for the header */
-    padding: 40px 0; /* Add padding to the top and bottom */
-    text-align: center; /* Center align header content */
+  background-color: #333; /* Background color for the header */
+  color: white; /* Text color for the header */
+  padding: 40px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center align header content */
 }
 
 /* Media query for screens smaller than 768px (typical mobile devices) */
 @media only screen and (max-width: 767px) {
-    header {
-        padding: 20px 0; /* Reduce padding for smaller screens */
-    }
+  header {
+    padding: 20px 0; /* Reduce padding for smaller screens */
+  }
 }
 
 .top-menu {
-    text-align: center; /* Center align the content */
+  text-align: center; /* Center align the content */
 }
 
 .center {
-    display: inline-block; /* Display content inline */
+  display: inline-block; /* Display content inline */
 }
 
 .center h1,
 .center p {
-    margin: 0; /* Remove margin for h1 and p tags */
+  margin: 0; /* Remove margin for h1 and p tags */
 }
 
 /* CSS for Menu Section */
 .menu {
-    background-color: orange; /* Background color for the menu */
-    color: #fff; /* Text color for the menu */
-    text-align: center; /* Center align the menu */
-    padding: 5px 0; /* Add padding to the top and bottom */
+  background-color: orange; /* Background color for the menu */
+  color: #fff; /* Text color for the menu */
+  text-align: center; /* Center align the menu */
+  padding: 5px 0; /* Add padding to the top and bottom */
 }
 
 .menu a {
-    text-decoration: none; /* Remove underline from all links in the menu */
-    color: white; /* Ensure text color is readable */
+  text-decoration: none; /* Remove underline from all links in the menu */
+  color: white; /* Ensure text color is readable */
 }
 
 .menu ul {
-    list-style-type: none; /* Remove default list style */
-    padding: 3px; /* Remove default padding */
+  list-style-type: none; /* Remove default list style */
+  padding: 3px; /* Remove default padding */
 }
 
 .menu ul li {
-    display: inline-block; /* Display menu items horizontally */
-    margin-right: 20px; /* Add space between menu items */
+  display: inline-block; /* Display menu items horizontally */
+  margin-right: 20px; /* Add space between menu items */
 }
 
 .menu ul li:last-child {
-    margin-right: 0; /* Remove margin from last menu item */
+  margin-right: 0; /* Remove margin from last menu item */
 }
 
 .menu li a:hover {
-    font-weight: bold;
-    text-decoration: underline; /* Underline only when hovered */
+  font-weight: bold;
+  text-decoration: underline; /* Underline only when hovered */
 }
 
 .container {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* CSS for Profile Image Section */
 .profile-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background-image: url('https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
 }
 
 .profile-image {
-    position: relative;
-    z-index: 1;
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 50%; /* Ensures the container is perfectly circular */
+  position: relative;
+  z-index: 1;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%; /* Ensures the container is perfectly circular */
 }
 
 .profile-image img {
-    width: 100%; /* Ensures the image fills the container */
-    height: 100%; /* Ensures the image fills the container */
-    object-fit: cover; /* Ensures the image is cropped to cover the entire container */
+  width: 100%; /* Ensures the image fills the container */
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Ensures the image is cropped to cover the entire container */
 }
 
 @media screen and (max-width: 718px) {
-    .profile-container {
-        height: 35vh; /* Adjust height for very small screens */
-    }
+  .profile-container {
+    height: 35vh; /* Adjust height for very small screens */
+  }
 
-    .profile-image {
-        width: 200px; /* Smaller width for very small screens */
-        height: 200px; /* Smaller height for very small screens */
-    }
+  .profile-image {
+    width: 200px; /* Smaller width for very small screens */
+    height: 200px; /* Smaller height for very small screens */
+  }
 }
 
 /* Main section styles */
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 section h1 {
-    color: magenta;
-    text-decoration: underline;
-    font-size: 30px;
+  color: magenta;
+  text-decoration: underline;
+  font-size: 30px;
 }
 
 section h2 {
-    margin-bottom: 15px;
-    margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 section ul {
-    margin-bottom: 15px;
-    margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
+  .container {
+    padding: 0 0px;
+  }
 
-    section h1 {
-        font-size: 24px;
-    }
+  section h1 {
+    font-size: 24px;
+  }
 }
 
 /* CSS for Scroll to Top Button */
 .scroll-to-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; /* Adjusted to right */
-    display: none;
-    font-size: 24px;
-    color: #fff;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Adjusted to right */
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .scroll-to-top-btn:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* Paragraph styles */
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 /* Skills List */
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill {
-    flex: 0 0 17%; /* Slightly reduced width to decrease box size from the right side */
-    padding: 10px;
-    box-sizing: border-box;
-    border: 3px solid #3498db; /* Border color */
-    border-radius: 25px; /* Rounded corners */
-    padding: 15px; /* Padding inside the box */
-    box-shadow: 0 13px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    margin-bottom: 25px;
-    margin-right: 13px;
+  flex: 0 0 17%; /* Slightly reduced width to decrease box size from the right side */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #3498db; /* Border color */
+  border-radius: 25px; /* Rounded corners */
+  padding: 15px; /* Padding inside the box */
+  box-shadow: 0 13px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  margin-bottom: 25px;
+  margin-right: 13px;
 }
 
 @media only screen and (max-width: 767px) {
-    .skill {
-        width: 100%; /* Set width to 100% for single-column layout on smaller screens */
-    }
+  .skill {
+    width: 100%; /* Set width to 100% for single-column layout on smaller screens */
+  }
 }
 
 .skill img {
-    width: 50px;  /*Adjust image size as needed*/ 
-    height: 50px;
-    margin-top: 2px;
-    margin-bottom: 1px;
+  width: 50px; /*Adjust image size as needed*/
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 1px;
 }
 
 .skill-info {
-    text-align: left;
-    margin-bottom: 1px;
-    margin-right: 10px;
+  text-align: left;
+  margin-bottom: 1px;
+  margin-right: 10px;
 }
 
 .skill-info h2 {
@@ -227,227 +226,246 @@ p {
   margin-top: 10px;
 }
 
-
 @media screen and (max-width: 768px) {
-    .skill {
-        flex: 0 0 50%; /* Two skills per row on smaller screens */
-    }
+  .skill {
+    flex: 0 0 50%; /* Two skills per row on smaller screens */
+  }
 }
 
 /* Info Table */
 .info-table {
-    width: 100%;  /* Full width for better responsiveness */
-    border-collapse: collapse;
-    font-size: 14px; /* Default font size */
-    overflow-x: auto; /* Allows horizontal scrolling if needed */
+  width: 100%; /* Full width for better responsiveness */
+  border-collapse: collapse;
+  font-size: 14px; /* Default font size */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
-.info-table th, .info-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+.info-table th,
+.info-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
 .info-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
 .info-table td:nth-child(2) {
-    width: 75%; /* Adjust the width as needed */
+  width: 75%; /* Adjust the width as needed */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .info-table {
-        font-size: 12px; /* Slightly smaller font size on smaller screens */
-    }
+  .info-table {
+    font-size: 12px; /* Slightly smaller font size on smaller screens */
+  }
 
-    .info-table th, .info-table td {
-        padding: 8px; /* Reduced padding for smaller screens */
-    }
+  .info-table th,
+  .info-table td {
+    padding: 8px; /* Reduced padding for smaller screens */
+  }
 
-    .info-table td:nth-child(2) {
-        width: auto; /* Reset width for better fitting on small screens */
-    }
+  .info-table td:nth-child(2) {
+    width: auto; /* Reset width for better fitting on small screens */
+  }
 
-    /* Optional: Add horizontal scrolling for smaller screens */
-    .info-table-wrapper {
-        overflow-x: auto; /* Allow horizontal scrolling */
-    }
+  /* Optional: Add horizontal scrolling for smaller screens */
+  .info-table-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
+  }
 }
 
 section a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .education-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px; /* Default font size */
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px; /* Default font size */
 }
 
-.education-table th, .education-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+.education-table th,
+.education-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
 .education-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
-.education-table th:nth-child(1), .education-table td:nth-child(1) {
-    width: 5%; /* Adjust the width as needed for the first column */
-    text-align: center;
+.education-table th:nth-child(1),
+.education-table td:nth-child(1) {
+  width: 5%; /* Adjust the width as needed for the first column */
+  text-align: center;
 }
 
-.education-table th:nth-child(2), .education-table td:nth-child(2) {
-    width: 30%; /* Adjust the width as needed for the second column */
+.education-table th:nth-child(2),
+.education-table td:nth-child(2) {
+  width: 30%; /* Adjust the width as needed for the second column */
 }
 
-.education-table th:nth-child(3), .education-table td:nth-child(3) {
-    width: 30%; /* Adjust the width as needed for the third column */
+.education-table th:nth-child(3),
+.education-table td:nth-child(3) {
+  width: 30%; /* Adjust the width as needed for the third column */
 }
 
-.education-table th:nth-child(4), .education-table td:nth-child(4) {
-    width: 15%; /* Adjust the width as needed for the fourth column */
-    text-align: center;
+.education-table th:nth-child(4),
+.education-table td:nth-child(4) {
+  width: 15%; /* Adjust the width as needed for the fourth column */
+  text-align: center;
 }
 
-.education-table th:nth-child(5), .education-table td:nth-child(5) {
-    width: 20%; /* Adjust the width as needed for the fifth column */
+.education-table th:nth-child(5),
+.education-table td:nth-child(5) {
+  width: 20%; /* Adjust the width as needed for the fifth column */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .education-table {
-        font-size: 9px; /* Smaller font size on smaller screens */
-    }
+  .education-table {
+    font-size: 9px; /* Smaller font size on smaller screens */
+  }
 
-    .education-table th, .education-table td {
-        padding: 3px; /* Reduced padding for smaller screens */
-    }
+  .education-table th,
+  .education-table td {
+    padding: 3px; /* Reduced padding for smaller screens */
+  }
 
-    .education-table th:nth-child(1), .education-table td:nth-child(1) {
-        width: 10%; /* Adjust width for better fit on small screens */
-    }
+  .education-table th:nth-child(1),
+  .education-table td:nth-child(1) {
+    width: 10%; /* Adjust width for better fit on small screens */
+  }
 
-    .education-table th:nth-child(2), .education-table td:nth-child(2) {
-        width: 25%; /* Adjust width for better fit on small screens */
-    }
+  .education-table th:nth-child(2),
+  .education-table td:nth-child(2) {
+    width: 25%; /* Adjust width for better fit on small screens */
+  }
 
-    .education-table th:nth-child(3), .education-table td:nth-child(3) {
-        width: 25%; /* Adjust width for better fit on small screens */
-    }
+  .education-table th:nth-child(3),
+  .education-table td:nth-child(3) {
+    width: 25%; /* Adjust width for better fit on small screens */
+  }
 
-    .education-table th:nth-child(4), .education-table td:nth-child(4) {
-        width: 15%; /* Adjust width for better fit on small screens */
-    }
+  .education-table th:nth-child(4),
+  .education-table td:nth-child(4) {
+    width: 15%; /* Adjust width for better fit on small screens */
+  }
 
-    .education-table th:nth-child(5), .education-table td:nth-child(5) {
-        width: 15%; /* Adjust width for better fit on small screens */
-    }
+  .education-table th:nth-child(5),
+  .education-table td:nth-child(5) {
+    width: 15%; /* Adjust width for better fit on small screens */
+  }
 }
 
 /* Certificate Table */
 .certificate-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px; /* Adjust the font size for better readability */
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px; /* Adjust the font size for better readability */
 }
 
-.certificate-table th, .certificate-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+.certificate-table th,
+.certificate-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
 .certificate-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
-.certificate-table th:nth-child(1), .certificate-table td:nth-child(1) {
-    width: 10%; /* Adjust the width as needed for the first column */
-    text-align: center;
+.certificate-table th:nth-child(1),
+.certificate-table td:nth-child(1) {
+  width: 10%; /* Adjust the width as needed for the first column */
+  text-align: center;
 }
 
-.certificate-table th:nth-child(2), .certificate-table td:nth-child(2) {
-    width: 40%; /* Adjust the width as needed for the second column */
+.certificate-table th:nth-child(2),
+.certificate-table td:nth-child(2) {
+  width: 40%; /* Adjust the width as needed for the second column */
 }
 
-.certificate-table th:nth-child(3), .certificate-table td:nth-child(3) {
-    width: 30%; /* Adjust the width as needed for the third column */
-    text-align: center;
+.certificate-table th:nth-child(3),
+.certificate-table td:nth-child(3) {
+  width: 30%; /* Adjust the width as needed for the third column */
+  text-align: center;
 }
 
-.certificate-table th:nth-child(4), .certificate-table td:nth-child(4) {
-    width: 20%; /* Adjust the width as needed for the fourth column */
+.certificate-table th:nth-child(4),
+.certificate-table td:nth-child(4) {
+  width: 20%; /* Adjust the width as needed for the fourth column */
 }
 
 @media (max-width: 767px) {
-    .certificate-table {
-        font-size: 10px; /* Reduce font size on smaller screens */
-    }
-    .certificate-table th, .certificate-table td {
-        padding: 6px; /* Reduce padding for better fit */
-    }
+  .certificate-table {
+    font-size: 10px; /* Reduce font size on smaller screens */
+  }
+  .certificate-table th,
+  .certificate-table td {
+    padding: 6px; /* Reduce padding for better fit */
+  }
 }
 
 /* Project styles */
 .project li {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    padding-left: 20px;
-    border: 1px solid #ff9a9e;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid #ff9a9e;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .project ul {
-    list-style-position: inside;  /* Ensures the bullet is inside the padding */
+  list-style-position: inside; /* Ensures the bullet is inside the padding */
 }
 
 .project h2 {
-    color: purple;
+  color: purple;
 }
 
 .project img {
-    width: 50px;  /*Adjust image size as needed*/ 
-    height: 50px;
-    margin-bottom: -15px;
+  width: 50px; /*Adjust image size as needed*/
+  height: 50px;
+  margin-bottom: -15px;
 }
 
 .project {
-    border: 2px solid #3498db; /* Border color */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    margin-bottom: 15px;
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  margin-bottom: 15px;
 }
 
 .footer {
-    background-color: black;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    color: #555;
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        padding: 15px 0;
-        font-size: 12px;
-    }
+  .footer {
+    padding: 15px 0;
+    font-size: 12px;
+  }
 }
