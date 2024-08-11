@@ -50,7 +50,11 @@ You can view my portfolio by visiting [**here**](https://jawad-khalil.github.io/
 ## Screenshots
 Here are  screenshots of my portfolio to give you a visual idea of what it looks like:
 
-![Portfolio Screenshot]()
+![Portfolio HTML](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Portfolio_Page/Portfolio_HTML_top.PNG?raw=true)
+![Portfolio Top](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Portfolio_Page/Portfolio_top.PNG?raw=true)
+![Portfolio Top](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Portfolio_Page/Portfolio_CSS.PNG?raw=true)
+![Portfolio JavaScript](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Portfolio_Page/Portfolio_JavaScript.PNG?raw=true)
+
 
 ## Acknowledgements
 - Special thanks to [CODEPEN](https://codepen.io/) for designing and testing.
