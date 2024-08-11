@@ -1,5 +1,8 @@
 # Jawad's Portfolio
 
+_A showcase of my skills, projects, and accomplishments in web development, design, and more._
+
+
 ## Table of Contents
 - [About Me](#about-me)
 - [LICENSE](#license)
