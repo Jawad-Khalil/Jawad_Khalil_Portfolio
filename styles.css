@@ -112,7 +112,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 31vh; /* Adjust height for very small screens */
+    height: 30vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
@@ -123,7 +123,7 @@ header {
 
 /* Main section styles */
 main {
-  padding: 20px;
+  padding: 35px;
 }
 
 section {
@@ -132,8 +132,9 @@ section {
 
 section h1 {
   color: magenta;
-  text-decoration: underline;
+  text-decoration: underline double;
   font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
 section h2 {
