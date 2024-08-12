@@ -65,7 +65,7 @@ header {
 
 .menu ul {
   list-style-type: none; /* Remove default list style */
-  padding: 3px; /* Remove default padding */
+  padding: 1px; /* Remove default padding */
 }
 
 .menu ul li {
