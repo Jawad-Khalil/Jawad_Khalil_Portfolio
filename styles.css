@@ -82,7 +82,6 @@ header {
   text-decoration: underline; /* Underline only when hovered */
 }
 
-
 /* CSS for Profile Image Section */
 .profile-container {
   position: relative;
@@ -132,14 +131,50 @@ section {
 
 section h1 {
   color: magenta;
-  text-decoration: underline double;
+  text-decoration: none;
   font-size: 30px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
 section h2 {
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+/* Specific symbols for each section */
+#personal-info h1::before {
+  content: "📋"; /* Symbol for Personal Information */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#education h1::before {
+  content: "🎓"; /* Symbol for Education */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#certificates h1::before {
+  content: "📜"; /* Symbol for Certificates */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#skills h1::before {
+  content: "💡"; /* Symbol for Skills */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#projects h1::before {
+  content: "💼"; /* Symbol for Projects */
+  position: relative;
+  left: -10px;
+  top: 0;
 }
 
 section ul {
