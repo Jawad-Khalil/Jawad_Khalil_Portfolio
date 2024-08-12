@@ -52,6 +52,12 @@ header {
   padding: 5px 0; /* Add padding to the top and bottom */
 }
 
+@media only screen and (max-width: 767px) {
+.menu {
+  padding: 1px 0; /* Add padding to the top and bottom */
+}
+}
+
 .menu a {
   text-decoration: none; /* Remove underline from all links in the menu */
   color: white; /* Ensure text color is readable */
