@@ -53,9 +53,9 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
-.menu {
-  padding: 1px 0; /* Add padding to the top and bottom */
-}
+  .menu {
+    padding: 1px 0; /* Add padding to the top and bottom */
+  }
 }
 
 .menu a {
@@ -65,12 +65,12 @@ header {
 
 .menu ul {
   list-style-type: none; /* Remove default list style */
-  padding: 1px; /* Remove default padding */
+  padding: 2px; /* Remove default padding */
 }
 
 .menu ul li {
   display: inline-block; /* Display menu items horizontally */
-  margin-right: 20px; /* Add space between menu items */
+  margin-right: 15px; /* Add space between menu items */
 }
 
 .menu ul li:last-child {
@@ -82,11 +82,6 @@ header {
   text-decoration: underline; /* Underline only when hovered */
 }
 
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 /* CSS for Profile Image Section */
 .profile-container {
@@ -149,6 +144,12 @@ section h2 {
 section ul {
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Responsive styles */
