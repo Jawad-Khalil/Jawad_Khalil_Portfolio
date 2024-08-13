@@ -212,23 +212,46 @@ section ul {
 }
 
 /* CSS for Scroll to Top Button */
+/* CSS for Scroll to Top Button */
 .scroll-to-top-btn {
   position: fixed;
   bottom: 20px;
-  right: 20px; /* Adjusted to right */
+  right: 20px;
   display: none;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   background-color: #333;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 60%;
   text-decoration: none;
-  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, transform 0.3s;
+  z-index: 1000;
+  height: 43px;
 }
 
 .scroll-to-top-btn:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(1.1);
 }
+
+/* Show the button when scrolling down 20px from the top */
+.scroll-to-top-btn.show {
+  display: block;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 600px) {
+  .scroll-to-top-btn {
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+    padding: 9px;
+    height: 33px;
+
+  }
+}
+
 
 /* Paragraph styles */
 p {
@@ -246,11 +269,11 @@ p {
   padding: 10px;
   box-sizing: border-box;
   border: 3px solid #3498db; /* Border color */
-  border-radius: 25px; /* Rounded corners */
-  padding: 15px; /* Padding inside the box */
-  box-shadow: 0 13px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  margin-bottom: 25px;
-  margin-right: 13px;
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px; /* Padding inside the box */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  margin-bottom: 20px;
+  margin-right: 12px;
 }
 
 @media only screen and (max-width: 767px) {
