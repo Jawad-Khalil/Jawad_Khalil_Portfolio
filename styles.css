@@ -307,7 +307,9 @@ p {
 .skill-info h2 {
   color: green;
   margin-top: 0px;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
+  line-height: 1.1; /* Height between the h2 lines*/
+
 }
 
 .skill-info p {
