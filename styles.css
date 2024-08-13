@@ -111,7 +111,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 29.9vh; /* Adjust height for very small screens */
+    height: 30vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
