@@ -111,7 +111,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 29.9vh; /* Adjust height for very small screens */
+    height: 30vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
@@ -280,7 +280,7 @@ p {
 @media only screen and (max-width: 767px) {
   .skill {
     flex: 0 0 45%; /* Two skills per row on smaller screens */
-    margin-right: 2%;
+    margin-right: auto;
   }
   
   .skill:nth-child(2n) {
@@ -312,6 +312,27 @@ p {
 .skill-info p {}
 
 @media screen and (max-width: 768px) {
+  .skill img {
+    width: 45px; /*Adjust image size as needed*/
+    height: 45px;
+  }
+
+.skill-info {
+  text-align: left;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  margin-left: 5px;
+  
+}
+
+.skill-info h2 {
+  color: green;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  
+}
+
+.skill-info p {}
   
 }
 
