@@ -111,7 +111,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 29.7vh; /* Adjust height for very small screens */
+    height: 29.9vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
@@ -278,12 +278,13 @@ p {
 
 @media only screen and (max-width: 767px) {
   .skill {
-    width: 48%; /* Set width to 48% for two-column layout on smaller screens */
-    margin-right: 2%; /* Add margin between the two skill boxes */
+    width: 45%; /* Set width to 48% for two-column layout on smaller screens */
+    margin-right: 2%;
+    
   }
 
   .skill:nth-child(2n) {
-    margin-right: 0; /* Remove margin-right for the second item in each row */
+    margin-right: 1%; /* Remove margin-right for the second item in each row */
   }
 }
 
