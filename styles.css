@@ -294,10 +294,11 @@ p {
   margin-top: 2px;
   margin-bottom: 2px;
   margin-left: 5px;
-}
+  display: block;
+  margin: 0 auto;}
 
 .skill-info {
-  text-align: left;
+  text-align: center;
   margin-bottom: 2px;
   margin-right: 10px;
   margin-left: 5px;
@@ -309,7 +310,9 @@ p {
   margin-bottom: 1px;
 }
 
-.skill-info p {}
+.skill-info p {
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   .skill img {
