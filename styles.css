@@ -111,7 +111,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 30vh; /* Adjust height for very small screens */
+    height: 29.9vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
@@ -262,14 +262,15 @@ p {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 .skill {
-  flex: 0 0 17%; /* Slightly reduced width to decrease box size from the right side */
+  flex: 0 0 15%; /* width to decrease or increase box size from the right side */
   padding: 10px;
   box-sizing: border-box;
-  border: 3px solid #3498db; /* Border color */
-  border-radius: 30px; /* Rounded corners */
+  border: 1px solid #3498db; /* Border color */
+  border-radius: 35px; /* Rounded corners */
   padding: 10px; /* Padding inside the box */
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
   margin-bottom: 20px;
@@ -278,42 +279,40 @@ p {
 
 @media only screen and (max-width: 767px) {
   .skill {
-    width: 45%; /* Set width to 48% for two-column layout on smaller screens */
+    flex: 0 0 45%; /* Two skills per row on smaller screens */
     margin-right: 2%;
-    
   }
-
+  
   .skill:nth-child(2n) {
     margin-right: 1%; /* Remove margin-right for the second item in each row */
   }
 }
 
 .skill img {
-  width: 50px; /*Adjust image size as needed*/
-  height: 50px;
+  width: 55px; /*Adjust image size as needed*/
+  height: 55px;
   margin-top: 2px;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
+  margin-left: 5px;
 }
 
 .skill-info {
   text-align: left;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   margin-right: 10px;
+  margin-left: 5px;
 }
 
 .skill-info h2 {
+  color: green;
   margin-top: 0px;
-  margin-bottom: -10px;
+  margin-bottom: 1px;
 }
 
-.skill-info p {
-  margin-top: 10px;
-}
+.skill-info p {}
 
 @media screen and (max-width: 768px) {
-  .skill {
-    flex: 0 0 48%; /* Two skills per row on smaller screens */
-  }
+  
 }
 
 /* Info Table */
