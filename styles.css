@@ -111,7 +111,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 30vh; /* Adjust height for very small screens */
+    height: 31vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
@@ -325,7 +325,7 @@ p {
 
 /* Info Table */
 .info-table {
-  width: 100%; /* Full width for better responsiveness */
+  width: 55%; /* Full width for better responsiveness */
   border-collapse: collapse;
   font-size: 14px; /* Default font size */
   overflow-x: auto; /* Allows horizontal scrolling if needed */
@@ -350,16 +350,17 @@ p {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .info-table {
+    width: 100%;
     font-size: 12px; /* Slightly smaller font size on smaller screens */
   }
 
   .info-table th,
   .info-table td {
-    padding: 8px; /* Reduced padding for smaller screens */
+    padding: 6px; /* Reduced padding for smaller screens */
   }
 
   .info-table td:nth-child(2) {
-    width: auto; /* Reset width for better fitting on small screens */
+    width: 80%; /* Reset width for better fitting on small screens */
   }
 
   /* Optional: Add horizontal scrolling for smaller screens */
