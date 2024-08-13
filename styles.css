@@ -111,7 +111,7 @@ header {
 
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 29vh; /* Adjust height for very small screens */
+    height: 29.5vh; /* Adjust height for very small screens */
   }
 
   .profile-image {
@@ -180,13 +180,13 @@ section h2 {
 
 section ul {
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1px;
 }
 
 /* Responsive styles */
@@ -196,14 +196,19 @@ section ul {
   }
 
   section h1 {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   section h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
     margin-top: 1px;
   }
+  #skills p{
+    font-size: 14px;
+
+  }
+   
 }
 
 /* CSS for Scroll to Top Button */
