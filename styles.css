@@ -245,9 +245,9 @@ section ul {
   .scroll-to-top-btn {
     bottom: 10px;
     right: 10px;
-    font-size: 13px;
+    font-size: 19px;
     padding: 9px;
-    height: 33px;
+    height: 38px;
 
   }
 }
@@ -262,7 +262,7 @@ p {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .skill {
@@ -315,25 +315,7 @@ p {
   .skill img {
     width: 45px; /*Adjust image size as needed*/
     height: 45px;
-  }
-
-.skill-info {
-  text-align: left;
-  margin-bottom: 2px;
-  margin-right: 10px;
-  margin-left: 5px;
-  
-}
-
-.skill-info h2 {
-  color: green;
-  margin-top: 0px;
-  margin-bottom: 1px;
-  
-}
-
-.skill-info p {}
-  
+  }  
 }
 
 /* Info Table */
