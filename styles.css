@@ -112,12 +112,11 @@ header {
 @media screen and (max-width: 718px) {
   .profile-container {
     height: 31vh; /* Adjust height for very small screens */
-    margin-bottom: -25px;
   }
 
   .profile-image {
-    width: 210px; /* Smaller width for very small screens */
-    height: 210px; /* Smaller height for very small screens */
+    width: 215px; /* Smaller width for very small screens */
+    height: 215px; /* Smaller height for very small screens */
   }
 }
 
@@ -208,6 +207,7 @@ section ul {
   #about p {
     margin-top: -7px;
   }
+  
     #skills p{
       font-size: 14px;
     }   
