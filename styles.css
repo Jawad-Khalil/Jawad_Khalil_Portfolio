@@ -383,7 +383,7 @@ section a {
 }
 
 .education-table {
-  width: 100%;
+  width: 60%;  /* width of the table*/
   border-collapse: collapse;
   font-size: 14px; /* Default font size */
 }
@@ -391,7 +391,7 @@ section a {
 .education-table th,
 .education-table td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 6px;
   text-align: left;
 }
 
@@ -402,13 +402,14 @@ section a {
 
 .education-table th:nth-child(1),
 .education-table td:nth-child(1) {
-  width: 5%; /* Adjust the width as needed for the first column */
+  width: 1%; /*width for the first column */
   text-align: center;
+  font-weight: bold;
 }
 
 .education-table th:nth-child(2),
 .education-table td:nth-child(2) {
-  width: 30%; /* Adjust the width as needed for the second column */
+  width: 20%; /* Adjust the width as needed for the second column */
 }
 
 .education-table th:nth-child(3),
@@ -418,19 +419,20 @@ section a {
 
 .education-table th:nth-child(4),
 .education-table td:nth-child(4) {
-  width: 15%; /* Adjust the width as needed for the fourth column */
+  width: 6%; /* Adjust the width as needed for the fourth column */
   text-align: center;
 }
 
 .education-table th:nth-child(5),
 .education-table td:nth-child(5) {
-  width: 20%; /* Adjust the width as needed for the fifth column */
+  width: 8%; /* Adjust the width as needed for the fifth column */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .education-table {
     font-size: 9px; /* Smaller font size on smaller screens */
+    width: 100%;
   }
 
   .education-table th,
@@ -440,12 +442,12 @@ section a {
 
   .education-table th:nth-child(1),
   .education-table td:nth-child(1) {
-    width: 10%; /* Adjust width for better fit on small screens */
+    width: 5%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(2),
   .education-table td:nth-child(2) {
-    width: 25%; /* Adjust width for better fit on small screens */
+    width: 20%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(3),
@@ -455,12 +457,12 @@ section a {
 
   .education-table th:nth-child(4),
   .education-table td:nth-child(4) {
-    width: 15%; /* Adjust width for better fit on small screens */
+    width: 5%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(5),
   .education-table td:nth-child(5) {
-    width: 15%; /* Adjust width for better fit on small screens */
+    width: 5%; /* Adjust width for better fit on small screens */
   }
 }
 
