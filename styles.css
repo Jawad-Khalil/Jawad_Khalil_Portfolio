@@ -112,11 +112,12 @@ header {
 @media screen and (max-width: 718px) {
   .profile-container {
     height: 31vh; /* Adjust height for very small screens */
+    margin-bottom: -25px;
   }
 
   .profile-image {
-    width: 200px; /* Smaller width for very small screens */
-    height: 200px; /* Smaller height for very small screens */
+    width: 210px; /* Smaller width for very small screens */
+    height: 210px; /* Smaller height for very small screens */
   }
 }
 
@@ -204,16 +205,12 @@ section ul {
     margin-bottom: 15px;
     margin-top: 1px;
   }
-  
-   /* Specific CSS for the h2 in the about section */
-#about h1 {
-  margin-top: 1px; /* Adjust this value as needed */
-  margin-bottom: 1px; /* Adjust this value as needed */  
-}
-
-  #skills p{
-    font-size: 14px;
-  }   
+  #about p {
+    margin-top: -7px;
+  }
+    #skills p{
+      font-size: 14px;
+    }   
 }
 
   /* Specific CSS for the h2 in the about section */
