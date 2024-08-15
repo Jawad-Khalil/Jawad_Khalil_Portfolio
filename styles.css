@@ -574,6 +574,22 @@ section a {
   margin-bottom: -15px;
 }
 
+@media screen and (max-width: 768px) {
+  .project li {
+    font-size: 12px;
+  }
+
+  .project h2 {
+    font-size: 16px;
+  }
+
+  .project img {
+    width: 25px; /*Adjust image size as needed*/
+    height: 25px;
+    margin-bottom: -5px;
+  }
+}
+
 /* Initialize the counter for the projects section */
 #projects {
   counter-reset: projectCounter; /* Initialize the counter */
