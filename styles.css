@@ -343,7 +343,7 @@ p {
 .info-table th,
 .info-table td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 8px;
   text-align: left;
 }
 
@@ -442,7 +442,7 @@ section a {
 
   .education-table th:nth-child(1),
   .education-table td:nth-child(1) {
-    width: 5%; /* Adjust width for better fit on small screens */
+    width: 1%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(2),
@@ -457,19 +457,19 @@ section a {
 
   .education-table th:nth-child(4),
   .education-table td:nth-child(4) {
-    width: 5%; /* Adjust width for better fit on small screens */
+    width: 2%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(5),
   .education-table td:nth-child(5) {
-    width: 5%; /* Adjust width for better fit on small screens */
+    width: 2%; /* Adjust width for better fit on small screens */
   }
 }
 
 
 /* Certificate Table */
 .certificate-table {
-  width: 70%;
+  width: 74%;
   border-collapse: collapse;
   font-size: 14px; /* Adjust the font size for better readability */
 }
@@ -477,7 +477,7 @@ section a {
 .certificate-table th,
 .certificate-table td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 6px;
   text-align: left;
 }
 
@@ -488,18 +488,19 @@ section a {
 
 .certificate-table th:nth-child(1),
 .certificate-table td:nth-child(1) {
-  width: 10%; /* Adjust the width as needed for the first column */
+  width: 1%; /* Adjust the width as needed for the first column */
   text-align: center;
+  font-weight: bold;
 }
 
 .certificate-table th:nth-child(2),
 .certificate-table td:nth-child(2) {
-  width: 40%; /* Adjust the width as needed for the second column */
+  width: 23%; /* Adjust the width as needed for the second column */
 }
 
 .certificate-table th:nth-child(3),
 .certificate-table td:nth-child(3) {
-  width: 30%; /* Adjust the width as needed for the third column */
+  width: 3%; /* Adjust the width as needed for the third column */
   text-align: center;
 }
 
@@ -510,12 +511,35 @@ section a {
 
 @media (max-width: 767px) {
   .certificate-table {
+    width: 100%;
     font-size: 10px; /* Reduce font size on smaller screens */
   }
   .certificate-table th,
   .certificate-table td {
-    padding: 6px; /* Reduce padding for better fit */
+    padding: 3px; /* Reduce padding for better fit */
   }
+    .certificate-table th:nth-child(1),
+.certificate-table td:nth-child(1) {
+  width: 1%; /* Adjust the width as needed for the first column */
+  text-align: center;
+  font-weight: bold;
+}
+
+.certificate-table th:nth-child(2),
+.certificate-table td:nth-child(2) {
+  width: 23%; /* Adjust the width as needed for the second column */
+}
+
+.certificate-table th:nth-child(3),
+.certificate-table td:nth-child(3) {
+  width: 1%; /* Adjust the width as needed for the third column */
+  text-align: center;
+}
+
+.certificate-table th:nth-child(4),
+.certificate-table td:nth-child(4) {
+  width: 20%; /* Adjust the width as needed for the fourth column */
+}
 }
 
 /* Project styles */
