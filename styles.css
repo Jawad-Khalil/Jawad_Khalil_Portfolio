@@ -539,6 +539,15 @@ section a {
 }
 
 /* Project styles */
+
+.project {
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  margin-bottom: 20px;
+}
+
 .project li {
   font-family: Georgia, serif;
   font-size: 18px;
@@ -563,14 +572,7 @@ section a {
   width: 50px; /*Adjust image size as needed*/
   height: 50px;
   margin-bottom: -15px;
-}
-
-.project {
-  border: 2px solid #3498db; /* Border color */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding inside the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  margin-bottom: 15px;
+  margin-top: -20px;
 }
 
 /* Initialize the counter for the projects section */
