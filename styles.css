@@ -452,7 +452,7 @@ section a {
 
   .education-table th:nth-child(3),
   .education-table td:nth-child(3) {
-    width: 25%; /* Adjust width for better fit on small screens */
+    width: 23%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(4),
