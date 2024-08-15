@@ -466,9 +466,10 @@ section a {
   }
 }
 
+
 /* Certificate Table */
 .certificate-table {
-  width: 100%;
+  width: 70%;
   border-collapse: collapse;
   font-size: 14px; /* Adjust the font size for better readability */
 }
