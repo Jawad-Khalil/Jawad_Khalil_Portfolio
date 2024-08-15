@@ -512,7 +512,7 @@ section a {
 @media (max-width: 767px) {
   .certificate-table {
     width: 100%;
-    font-size: 10px; /* Reduce font size on smaller screens */
+    font-size: 9px; /* Reduce font size on smaller screens */
   }
   .certificate-table th,
   .certificate-table td {
