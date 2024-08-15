@@ -207,18 +207,17 @@ section ul {
   #about p {
     margin-top: -7px;
   }
-  
-    #skills p{
-      font-size: 14px;
-    }   
+
+  #skills p {
+    font-size: 14px;
+  }
 }
 
-  /* Specific CSS for the h2 in the about section */
+/* Specific CSS for the h2 in the about section */
 #about h1 {
   margin-top: 3px; /* Adjust this value as needed */
-  margin-bottom: 2px; /* Adjust this value as needed */  
+  margin-bottom: 2px; /* Adjust this value as needed */
 }
-
 
 /* CSS for Scroll to Top Button */
 /* CSS for Scroll to Top Button */
@@ -257,10 +256,8 @@ section ul {
     font-size: 19px;
     padding: 9px;
     height: 38px;
-
   }
 }
-
 
 /* Paragraph styles */
 p {
@@ -291,7 +288,7 @@ p {
     flex: 0 0 45%; /* Two skills per row on smaller screens */
     margin-right: auto;
   }
-  
+
   .skill:nth-child(2n) {
     margin-right: 1%; /* Remove margin-right for the second item in each row */
   }
@@ -304,7 +301,8 @@ p {
   margin-bottom: 2px;
   margin-left: 5px;
   display: block;
-  margin: 0 auto;}
+  margin: 0 auto;
+}
 
 .skill-info {
   text-align: center;
@@ -318,18 +316,17 @@ p {
   margin-top: 0px;
   margin-bottom: 5px;
   line-height: 1.1; /* Height between the h2 lines*/
-
 }
 
 .skill-info p {
-    text-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .skill img {
     width: 45px; /*Adjust image size as needed*/
     height: 45px;
-  }  
+  }
 }
 
 /* Info Table */
@@ -383,7 +380,7 @@ section a {
 }
 
 .education-table {
-  width: 60%;  /* width of the table*/
+  width: 60%; /* width of the table*/
   border-collapse: collapse;
   font-size: 14px; /* Default font size */
 }
@@ -466,7 +463,6 @@ section a {
   }
 }
 
-
 /* Certificate Table */
 .certificate-table {
   width: 74%;
@@ -518,28 +514,28 @@ section a {
   .certificate-table td {
     padding: 3px; /* Reduce padding for better fit */
   }
-    .certificate-table th:nth-child(1),
-.certificate-table td:nth-child(1) {
-  width: 1%; /* Adjust the width as needed for the first column */
-  text-align: center;
-  font-weight: bold;
-}
+  .certificate-table th:nth-child(1),
+  .certificate-table td:nth-child(1) {
+    width: 1%; /* Adjust the width as needed for the first column */
+    text-align: center;
+    font-weight: bold;
+  }
 
-.certificate-table th:nth-child(2),
-.certificate-table td:nth-child(2) {
-  width: 23%; /* Adjust the width as needed for the second column */
-}
+  .certificate-table th:nth-child(2),
+  .certificate-table td:nth-child(2) {
+    width: 23%; /* Adjust the width as needed for the second column */
+  }
 
-.certificate-table th:nth-child(3),
-.certificate-table td:nth-child(3) {
-  width: 1%; /* Adjust the width as needed for the third column */
-  text-align: center;
-}
+  .certificate-table th:nth-child(3),
+  .certificate-table td:nth-child(3) {
+    width: 1%; /* Adjust the width as needed for the third column */
+    text-align: center;
+  }
 
-.certificate-table th:nth-child(4),
-.certificate-table td:nth-child(4) {
-  width: 20%; /* Adjust the width as needed for the fourth column */
-}
+  .certificate-table th:nth-child(4),
+  .certificate-table td:nth-child(4) {
+    width: 20%; /* Adjust the width as needed for the fourth column */
+  }
 }
 
 /* Project styles */
@@ -575,6 +571,18 @@ section a {
   padding: 20px; /* Padding inside the box */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   margin-bottom: 15px;
+}
+
+/* Initialize the counter for the projects section */
+#projects {
+  counter-reset: projectCounter; /* Initialize the counter */
+}
+
+#projects .project h2::before {
+  counter-increment: projectCounter; /* Increment the counter for each h2 */
+  content: "Project " counter(projectCounter) ": "; /* Display the counter before the heading text */
+  font-weight: bold; /* Optional: make the counter bold */
+  margin-right: 4px; /* Optional: add some space between the counter and the heading text */
 }
 
 .footer {
