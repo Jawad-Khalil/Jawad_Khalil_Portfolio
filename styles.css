@@ -224,7 +224,12 @@ section ul {
   margin-bottom: 2px; /* Adjust this value as needed */
 }
 
-/* CSS for Scroll to Top Button */
+.spaced {
+   display: block; /* Ensures the element behaves like a block element */
+   text-indent: 30px; /* Indentation of 30 pixels */
+   margin-top: 7px;
+}
+
 /* CSS for Scroll to Top Button */
 .scroll-to-top-btn {
   position: fixed;
