@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Resetting styles (for all) */
 * {
   margin: 0;
   padding: 0;
@@ -7,36 +7,36 @@
 
 /* Basic styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;   
+  line-height: 1.6; /* Distance between two lines  */
   background-color: white;
 }
 
 .container h1 {
-  margin-bottom: 20px; /* Adjust the value as needed */
+  margin-bottom: 20px; /* Section headdings */
 }
 
 /* Header styles */
 header {
-  background-color: #333; /* Background color for the header */
+  background-color: #333; /* Dark Gray */
   color: white; /* Text color for the header */
-  padding: 30px 0; /* Add padding to the top and bottom */
+  padding: 30px 0; /* Padding to the top and bottom */
   text-align: center; /* Center align header content */
 }
 
-/* Media query for screens smaller than 768px (typical mobile devices) */
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media only screen and (max-width: 767px) {
   header {
-    padding: 10px 0; /* Reduce padding for smaller screens */
+    padding: 10px 0; /* Small padding for smaller screens */
   }
 }
 
 .top-menu {
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 .center {
-  display: inline-block; /* Display content inline */
+  display: inline-block; /* More versatile in terms of layout control compared to purely inline elements */
 }
 
 .center h1,
@@ -52,6 +52,7 @@ header {
   padding: 5px 0; /* Add padding to the top and bottom */
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media only screen and (max-width: 767px) {
   .menu {
     padding: 1px 0; /* Add padding to the top and bottom */
@@ -109,6 +110,7 @@ header {
   object-fit: cover; /* Ensures the image is cropped to cover the entire container */
 }
 
+/* Adjustments for the screens smaller than 718px (usually mobile devices) */
 @media screen and (max-width: 718px) {
   .profile-container {
     height: 31vh; /* Adjust height for very small screens */
@@ -189,7 +191,7 @@ section ul {
   padding: 0 1px;
 }
 
-/* Responsive styles */
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media (max-width: 768px) {
   .container {
     padding: 0 0px;
@@ -248,7 +250,7 @@ section ul {
   display: block;
 }
 
-/* Adjustments for mobile */
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media (max-width: 600px) {
   .scroll-to-top-btn {
     bottom: 10px;
@@ -283,6 +285,7 @@ p {
   margin-right: 12px;
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media only screen and (max-width: 767px) {
   .skill {
     flex: 0 0 45%; /* Two skills per row on smaller screens */
@@ -322,6 +325,7 @@ p {
   text-align: center;
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .skill img {
     width: 55px; /*Adjust image size as needed*/
@@ -353,7 +357,7 @@ p {
   width: 75%; /* Adjust the width as needed */
 }
 
-/* Responsive adjustments */
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .info-table {
     width: 100%;
@@ -425,7 +429,7 @@ section a {
   width: 8%; /* Adjust the width as needed for the fifth column */
 }
 
-/* Responsive adjustments */
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .education-table {
     font-size: 9px; /* Smaller font size on smaller screens */
@@ -444,7 +448,7 @@ section a {
 
   .education-table th:nth-child(2),
   .education-table td:nth-child(2) {
-    width: 22%; /* Adjust width for better fit on small screens */
+    width: 12%; /* Adjust width for better fit on small screens */
   }
 
   .education-table th:nth-child(3),
@@ -505,6 +509,7 @@ section a {
   width: 20%; /* Adjust the width as needed for the fourth column */
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media (max-width: 767px) {
   .certificate-table {
     width: 100%;
@@ -574,6 +579,7 @@ section a {
   margin-bottom: -15px;
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .project li {
     font-size: 14px;
@@ -616,6 +622,7 @@ section a {
   padding: 0 15px;
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .footer {
     padding: 15px 0;
@@ -653,7 +660,7 @@ section a {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .footer {
     padding: 15px 0;
