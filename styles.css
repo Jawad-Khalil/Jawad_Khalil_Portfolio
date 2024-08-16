@@ -206,9 +206,6 @@ section ul {
   }
   #about p {
     margin-top: -7px;
-    font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   #skills p {
@@ -327,8 +324,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .skill img {
-    width: 45px; /*Adjust image size as needed*/
-    height: 45px;
+    width: 55px; /*Adjust image size as needed*/
+    height: 55px;
   }
 }
 
