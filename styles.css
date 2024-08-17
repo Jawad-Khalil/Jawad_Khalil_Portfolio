@@ -224,6 +224,12 @@ section ul {
   margin-bottom: 2px; /* Adjust this value as needed */
 }
 
+#projects p{
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+}
 .spaced {
    display: block; /* Ensures the element behaves like a block element */
    text-indent: 30px; /* Indentation of 30 pixels */
