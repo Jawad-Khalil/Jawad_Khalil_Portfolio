@@ -224,12 +224,6 @@ section ul {
   margin-bottom: 2px; /* Adjust this value as needed */
 }
 
-#projects p{
-  margin-top: -10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-size: 18px;
-}
 .spaced {
    display: block; /* Ensures the element behaves like a block element */
    text-indent: 30px; /* Indentation of 30 pixels */
@@ -567,6 +561,22 @@ section a {
   margin-bottom: 20px;
 }
 
+#projects p {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  decoration: none;
+}
+
+@media (max-width: 767px) {
+  #projects p{
+    font-size: 14px;
+  }
+}
+#projects li a {
+    text-decoration: none; /* Removes the underline from the link */
+}
 .project li {
   font-family: Georgia, serif;
   font-size: 18px;
