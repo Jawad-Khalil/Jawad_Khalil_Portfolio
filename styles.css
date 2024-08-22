@@ -47,7 +47,6 @@ header {
 /* CSS for Menu Section */
 .menu {
   background-color: #2F4F4F; /* Dark Slate Gray */
-  color: #FFFFE0; /* Soft Yellow */
   text-align: center;
   padding: 5px 0;
 }
@@ -55,27 +54,27 @@ header {
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media only screen and (max-width: 767px) {
   .menu {
-    padding: 1px 0; /* Add padding to the top and bottom */
+    padding: 1px 0; /* Adding padding to the top and bottom */
   }
 }
 
 .menu a {
-  text-decoration: none; /* Remove underline from all links in the menu */
-  color: white; /* Ensure text color is readable */
+  text-decoration: none; /* Removes underline from all links in the menu */
+  color: #FFFFE0; /* Soft Yellow */
 }
 
 .menu ul {
-  list-style-type: none; /* Remove default list style */
-  padding: 2px; /* Remove default padding */
+  list-style-type: none; /*  Removes the default bullet points */
+  padding: 2px; /* Removes default padding */
 }
 
 .menu ul li {
-  display: inline-block; /* Display menu items horizontally */
-  margin-right: 15px; /* Add space between menu items */
+  display: inline-block; /* Displays menu items horizontally */
+  margin-right: 15px; /* Adding space between menu items */
 }
 
 .menu ul li:last-child {
-  margin-right: 0; /* Remove margin from last menu item */
+  margin-right: 0; /* Removes margin from the last menu item */
 }
 
 .menu li a:hover {
@@ -85,23 +84,23 @@ header {
 
 /* CSS for Profile Image Section */
 .profile-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48vh;
-  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
+  position: relative;  /* Flexibility for positioning child elements */
+  display: flex;  /* To create flexible and responsive layouts */
+  justify-content: center;  /* Child elements are centered along the horizontal axis */
+  align-items: center;  /* Child elements are centered along the vertical axis */
+  height: 48vh;  /* 48% of the viewport height (the height of the visible area of the web page) */
+  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");  /* Visually appealing background image to the container */
+  background-size: cover;  /* Maintains the aspect ratio of the image while covering the entire container */
+  background-position: center;  /* Focal point of the background image is centered, */
 }
 
 .profile-image {
-  position: relative;
-  z-index: 1;
+  position: relative;  /*  */
+  z-index: 1;  /* Ensures that this element is placed in front of other elements with lower z-index values. */
   width: 350px;
   height: 350px;
-  overflow: hidden;
   border-radius: 50%; /* Ensures the container is perfectly circular */
+  overflow: hidden;  /* Prevents parts of the image from spilling out of the defined 350px by 350px circular area */
 }
 
 .profile-image img {
@@ -113,7 +112,7 @@ header {
 /* Adjustments for the screens smaller than 718px (usually mobile devices) */
 @media screen and (max-width: 718px) {
   .profile-container {
-    height: 31vh; /* Adjust height for very small screens */
+    height: 31vh; /* For very small screens */
   }
 
   .profile-image {
@@ -122,7 +121,7 @@ header {
   }
 }
 
-/* Main section styles */
+/* Styles for main content of the webpage */
 main {
   padding: 8px;
 }
@@ -132,7 +131,7 @@ section {
 }
 
 section h1 {
-  color: magenta;
+  color: #002B5B; /* Navy Blue */
   text-decoration: none;
   font-size: 30px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
@@ -140,6 +139,7 @@ section h1 {
 }
 
 section h2 {
+  color: #228B22;  /* Forest Green */
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -147,9 +147,9 @@ section h2 {
 /* Specific symbols for each section */
 #personal-info h1::before {
   content: "📋"; /* Symbol for Personal Information */
-  position: relative;
+  position: relative;  /* fine-tuning of the symbol's placement relative to the <h1> heading */
   left: -10px;
-  top: 0;
+  top: 0;  /* the symbol is vertically aligned with the text */
 }
 
 #education h1::before {
@@ -220,42 +220,43 @@ section ul {
 
 /* Specific CSS for the h2 in the about section */
 #about h1 {
-  margin-top: 3px; /* Adjust this value as needed */
-  margin-bottom: 2px; /* Adjust this value as needed */
+  margin-top: 3px;
+  margin-bottom: 2px;
 }
 
+/* format paragraph */
 .spaced {
    display: block; /* Ensures the element behaves like a block element */
-   text-indent: 30px; /* Indentation of 30 pixels */
+   text-indent: 30px; /* visually separates the start of a paragraph from the rest of the text */
    margin-top: 7px;
 }
 
 /* CSS for Scroll to Top Button */
 .scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
+  position: fixed;  /* Ensures the button is always visible to the user as they scroll */
+  bottom: 20px;  /* Positions the button 20 pixels away from the bottom */
   right: 20px;
-  display: none;
+  display: none;  /* Initially hides the button from view */
   font-size: 20px;
-  color: #fff;
-  background-color: #333;
-  padding: 10px;
-  border-radius: 60%;
-  text-decoration: none;
+  color: #fff;  /* Sets the text or icon color to white */
+  background-color: #002B5B; /* Sets the background color of the button to a Navy Blue (#002B5B) */
+  padding: 10px; /* Ensures the button content is not cramped and has some space around it */
+  border-radius: 60%; /* Creates a circular or oval shape */
+  text-decoration: none;  /* Removes any underlining from text or links inside the button */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease-in-out, transform 0.3s;
-  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, transform 0.3s; /* Smoothly animates changes to the button’s opacity and transform properties */
+  z-index: 1000;  /* Prevents the button from being hidden behind other content on the page */
   height: 43px;
 }
 
 .scroll-to-top-btn:hover {
-  opacity: 0.8;
-  transform: scale(1.1);
+  opacity: 0.8;  /* Reduces the button's opacity to 80% of its original value when hovered over */
+  transform: scale(1.1);  /* Increases the size of the button by 10% when hovered over */
 }
 
 /* Show the button when scrolling down 20px from the top */
-.scroll-to-top-btn.show {
-  display: block;
+.scroll-to-top-btn.show { /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
+  display: block;  /* makes the button visible and ensures it behaves like a block element */
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -274,77 +275,11 @@ p {
   text-align: justify;
 }
 
-/* Skills List */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 6px;
-}
-
-.skill {
-  flex: 0 0 15%; /* width to decrease or increase box size from the right side */
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #3498db; /* Border color */
-  border-radius: 35px; /* Rounded corners */
-  padding: 10px; /* Padding inside the box */
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
-  margin-bottom: 20px;
-  margin-right: 12px;
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media only screen and (max-width: 767px) {
-  .skill {
-    flex: 0 0 45%; /* Two skills per row on smaller screens */
-    margin-right: auto;
-  }
-
-  .skill:nth-child(2n) {
-    margin-right: 1%; /* Remove margin-right for the second item in each row */
-  }
-}
-
-.skill img {
-  width: 55px; /*Adjust image size as needed*/
-  height: 55px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 5px;
-  display: block;
-  margin: 0 auto;
-}
-
-.skill-info {
-  text-align: center;
-  margin-bottom: 2px;
-  margin-right: 10px;
-  margin-left: 5px;
-}
-
-.skill-info h2 {
-  color: green;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  line-height: 1.1; /* Height between the h2 lines*/
-}
-
-.skill-info p {
-  text-align: center;
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media screen and (max-width: 768px) {
-  .skill img {
-    width: 55px; /*Adjust image size as needed*/
-    height: 55px;
-  }
-}
-
-/* Info Table */
+/* Personal-info Section */
+/* Info table */
 .info-table {
   width: 55%; /* Full width for better responsiveness */
-  border-collapse: collapse;
+  border-collapse: collapse; /*  */
   font-size: 14px; /* Default font size */
   overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
@@ -386,6 +321,78 @@ p {
     overflow-x: auto; /* Allow horizontal scrolling */
   }
 }
+
+/* Skills section */
+/* All skills*/
+.skills-list {
+  display: flex;  /* items inside it are aligned in a row by default */
+  flex-wrap: wrap;  /* automatically move to the next line instead of overflowing out of the container */
+  margin-left: 6px;
+}
+
+/* Each skill*/
+.skill {
+  flex: 0 0 15%; /* take up 15% of the width of its parent container, ensuring a consistent size */
+  padding: 10px; /*  */
+  box-sizing: border-box;  /* padding and border are included within the element's width and height */
+  border: 1px solid #002B5B; /* Border color */
+  border-radius: 35px; /* Rounded corners */
+  padding: 10px; /* Padding inside the box */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  margin-bottom: 20px;
+  margin-right: 12px;
+  background-color: #F0FFF0;  /* Honeydew */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media only screen and (max-width: 767px) {
+  .skill {
+    flex: 0 0 45%; /* Two skills per row on smaller screens */
+    margin-right: auto;
+  }
+
+  .skill:nth-child(2n) {
+    margin-right: 1%; /* Removes margin-right for the second item in each row */
+  }
+}
+
+/* Skill pngs */
+.skill img {
+  width: 55px;
+  height: 55px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Skill information*/
+.skill-info {
+  text-align: center;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.skill-info h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  line-height: 1.1; /* Height between the h2 lines*/
+}
+
+.skill-info p {
+  text-align: center;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .skill img {
+    width: 55px; /*Adjust image size as needed*/
+    height: 55px;
+  }
+}
+
 
 section a {
   font-weight: bold;
