@@ -144,6 +144,11 @@ section h2 {
   margin-top: 15px;
 }
 
+/* Paragraph styles */
+p {
+  text-align: justify;
+}
+
 /* Specific symbols for each section */
 #personal-info h1::before {
   content: "📋"; /* Symbol for Personal Information */
@@ -270,34 +275,29 @@ section ul {
   }
 }
 
-/* Paragraph styles */
-p {
-  text-align: justify;
-}
-
 /* Personal-info Section */
 /* Info table */
 .info-table {
-  width: 55%; /* Full width for better responsiveness */
-  border-collapse: collapse; /*  */
+  width: 55%; /* controling the table's size relative to the parent container */
+  border-collapse: collapse; /* Collapses the borders of the table and its cells into a single border */
   font-size: 14px; /* Default font size */
   overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
 .info-table th,
 .info-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px solid #002B5B; /* a structured, grid-like appearance */
+  padding: 8px;  /* space between the cell content and its borders */
   text-align: left;
 }
 
 .info-table th {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2; /* Light Gray */
   font-weight: bold;
 }
 
-.info-table td:nth-child(2) {
-  width: 75%; /* Adjust the width as needed */
+.info-table td:nth-child(2) { /* second child element of each row ("<tr>") */
+  width: 75%;  /* Sets the width of the second column to 75% of the table's width */
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -318,7 +318,7 @@ p {
 
   /* Optional: Add horizontal scrolling for smaller screens */
   .info-table-wrapper {
-    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-x: auto; /* Allows horizontal scrolling */
   }
 }
 
@@ -390,6 +390,7 @@ p {
   .skill img {
     width: 55px; /*Adjust image size as needed*/
     height: 55px;
+    margin-bottom: 5px;
   }
 }
 
