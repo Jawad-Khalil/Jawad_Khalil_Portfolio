@@ -133,13 +133,14 @@ section {
 section h1 {
   color: #002B5B; /* Navy Blue */
   text-decoration: none;
-  font-size: 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  font-size: 35px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
   margin-left: 15px;
 }
 
 section h2 {
   color: #228B22;  /* Forest Green */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -275,7 +276,7 @@ section ul {
   }
 }
 
-/* Personal-info Section */
+/* "personal-info" Section */
 /* Info table */
 .info-table {
   width: 55%; /* controling the table's size relative to the parent container */
@@ -292,7 +293,7 @@ section ul {
 }
 
 .info-table th {
-  background-color: #f2f2f2; /* Light Gray */
+  background-color: #CCCCFF; /* Periwinkle (soft, light purple) */
   font-weight: bold;
 }
 
@@ -322,7 +323,170 @@ section ul {
   }
 }
 
-/* Skills section */
+/* "education" Section */
+.education-table {
+  width: 60%; /* width of the table*/
+  border-collapse: collapse;
+  font-size: 14px; /* Default font size */
+}
+
+.education-table th,
+.education-table td {
+  border: 1px solid #002B5B; /* a structured, grid-like appearance */
+  padding: 6px;
+  text-align: left;
+}
+
+.education-table th {
+  background-color: #CCCCFF; /* Periwinkle (soft, light purple) */
+  font-weight: bold;
+}
+
+.education-table th:nth-child(1),
+.education-table td:nth-child(1) {
+  width: 1%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.education-table th:nth-child(2),
+.education-table td:nth-child(2) {
+  width: 20%;
+}
+
+.education-table th:nth-child(3),
+.education-table td:nth-child(3) {
+  width: 30%;
+}
+
+.education-table th:nth-child(4),
+.education-table td:nth-child(4) {
+  width: 6%;
+  text-align: center;
+}
+
+.education-table th:nth-child(5),
+.education-table td:nth-child(5) {
+  width: 8%;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .education-table {
+    font-size: 9px; /* Smaller font size on smaller screens */
+    width: 100%;
+  }
+
+  .education-table th,
+  .education-table td {
+    padding: 3px; /* Reduced padding for smaller screens */
+  }
+
+  .education-table th:nth-child(1),
+  .education-table td:nth-child(1) {
+    width: 1%;
+  }
+
+  .education-table th:nth-child(2),
+  .education-table td:nth-child(2) {
+    width: 12%;
+  }
+
+  .education-table th:nth-child(3),
+  .education-table td:nth-child(3) {
+    width: 23%; /* Adjust width for better fit on small screens */
+  }
+
+  .education-table th:nth-child(4),
+  .education-table td:nth-child(4) {
+    width: 2%;
+  }
+
+  .education-table th:nth-child(5),
+  .education-table td:nth-child(5) {
+    width: 1%;
+  }
+}
+
+/* "certificates" Section
+/* Certificate Table */
+.certificate-table {
+  width: 74%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.certificate-table th,
+.certificate-table td {
+  border: 1px solid #002B5B; /* a structured, grid-like appearance */
+  padding: 6px;
+  text-align: left;
+}
+
+.certificate-table th {
+  background-color: #CCCCFF; /* Periwinkle (soft, light purple) */
+  font-weight: bold;
+}
+
+.certificate-table th:nth-child(1),
+.certificate-table td:nth-child(1) {
+  width: 1%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.certificate-table th:nth-child(2),
+.certificate-table td:nth-child(2) {
+  width: 23%;
+}
+
+.certificate-table th:nth-child(3),
+.certificate-table td:nth-child(3) {
+  width: 3%;
+  text-align: center;
+}
+
+.certificate-table th:nth-child(4),
+.certificate-table td:nth-child(4) {
+  width: 20%;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media (max-width: 767px) {
+  .certificate-table {
+    width: 100%;
+    font-size: 9px; /* Reduces font size on smaller screens */
+  }
+  .certificate-table th,
+  .certificate-table td {
+    padding: 3px;
+  }
+  .certificate-table th:nth-child(1),
+  .certificate-table td:nth-child(1) {
+    width: 1%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .certificate-table th:nth-child(2),
+  .certificate-table td:nth-child(2) {
+    width: 23%;
+  }
+
+  .certificate-table th:nth-child(3),
+  .certificate-table td:nth-child(3) {
+    width: 1%;
+    text-align: center;
+  }
+
+  .certificate-table th:nth-child(4),
+  .certificate-table td:nth-child(4) {
+    width: 20%;
+  }
+}
+
+/* "skills" Section */
+
 /* All skills*/
 .skills-list {
   display: flex;  /* items inside it are aligned in a row by default */
@@ -335,7 +499,7 @@ section ul {
   flex: 0 0 15%; /* take up 15% of the width of its parent container, ensuring a consistent size */
   padding: 10px; /*  */
   box-sizing: border-box;  /* padding and border are included within the element's width and height */
-  border: 1px solid #002B5B; /* Border color */
+  border: 1px solid #002B5B; /* Navy Blue */
   border-radius: 35px; /* Rounded corners */
   padding: 10px; /* Padding inside the box */
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
@@ -399,182 +563,24 @@ section a {
   font-weight: bold;
 }
 
-.education-table {
-  width: 60%; /* width of the table*/
-  border-collapse: collapse;
-  font-size: 14px; /* Default font size */
-}
+/* "projects" Section */
 
-.education-table th,
-.education-table td {
-  border: 1px solid #ddd;
-  padding: 6px;
-  text-align: left;
-}
-
-.education-table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-.education-table th:nth-child(1),
-.education-table td:nth-child(1) {
-  width: 1%; /*width for the first column */
-  text-align: center;
-  font-weight: bold;
-}
-
-.education-table th:nth-child(2),
-.education-table td:nth-child(2) {
-  width: 20%; /* Adjust the width as needed for the second column */
-}
-
-.education-table th:nth-child(3),
-.education-table td:nth-child(3) {
-  width: 30%; /* Adjust the width as needed for the third column */
-}
-
-.education-table th:nth-child(4),
-.education-table td:nth-child(4) {
-  width: 6%; /* Adjust the width as needed for the fourth column */
-  text-align: center;
-}
-
-.education-table th:nth-child(5),
-.education-table td:nth-child(5) {
-  width: 8%; /* Adjust the width as needed for the fifth column */
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media screen and (max-width: 768px) {
-  .education-table {
-    font-size: 9px; /* Smaller font size on smaller screens */
-    width: 100%;
-  }
-
-  .education-table th,
-  .education-table td {
-    padding: 3px; /* Reduced padding for smaller screens */
-  }
-
-  .education-table th:nth-child(1),
-  .education-table td:nth-child(1) {
-    width: 1%; /* Adjust width for better fit on small screens */
-  }
-
-  .education-table th:nth-child(2),
-  .education-table td:nth-child(2) {
-    width: 12%; /* Adjust width for better fit on small screens */
-  }
-
-  .education-table th:nth-child(3),
-  .education-table td:nth-child(3) {
-    width: 23%; /* Adjust width for better fit on small screens */
-  }
-
-  .education-table th:nth-child(4),
-  .education-table td:nth-child(4) {
-    width: 2%; /* Adjust width for better fit on small screens */
-  }
-
-  .education-table th:nth-child(5),
-  .education-table td:nth-child(5) {
-    width: 1%; /* Adjust width for better fit on small screens */
-  }
-}
-
-/* Certificate Table */
-.certificate-table {
-  width: 74%;
-  border-collapse: collapse;
-  font-size: 14px; /* Adjust the font size for better readability */
-}
-
-.certificate-table th,
-.certificate-table td {
-  border: 1px solid #ddd;
-  padding: 6px;
-  text-align: left;
-}
-
-.certificate-table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-.certificate-table th:nth-child(1),
-.certificate-table td:nth-child(1) {
-  width: 1%; /* Adjust the width as needed for the first column */
-  text-align: center;
-  font-weight: bold;
-}
-
-.certificate-table th:nth-child(2),
-.certificate-table td:nth-child(2) {
-  width: 23%; /* Adjust the width as needed for the second column */
-}
-
-.certificate-table th:nth-child(3),
-.certificate-table td:nth-child(3) {
-  width: 3%; /* Adjust the width as needed for the third column */
-  text-align: center;
-}
-
-.certificate-table th:nth-child(4),
-.certificate-table td:nth-child(4) {
-  width: 20%; /* Adjust the width as needed for the fourth column */
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media (max-width: 767px) {
-  .certificate-table {
-    width: 100%;
-    font-size: 9px; /* Reduce font size on smaller screens */
-  }
-  .certificate-table th,
-  .certificate-table td {
-    padding: 3px; /* Reduce padding for better fit */
-  }
-  .certificate-table th:nth-child(1),
-  .certificate-table td:nth-child(1) {
-    width: 1%; /* Adjust the width as needed for the first column */
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .certificate-table th:nth-child(2),
-  .certificate-table td:nth-child(2) {
-    width: 23%; /* Adjust the width as needed for the second column */
-  }
-
-  .certificate-table th:nth-child(3),
-  .certificate-table td:nth-child(3) {
-    width: 1%; /* Adjust the width as needed for the third column */
-    text-align: center;
-  }
-
-  .certificate-table th:nth-child(4),
-  .certificate-table td:nth-child(4) {
-    width: 20%; /* Adjust the width as needed for the fourth column */
-  }
-}
-
-/* Project styles */
-
+/* Each Project */
 .project {
-  border: 2px solid #3498db; /* Border color */
+  border: 1px solid #002B5B; /* Navy Blue */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
   margin-bottom: 20px;
+  background-color: #F0FFF0;  /* Honeydew */
 }
 
+/* Paragraph settings within "project" section */
 #projects p {
   margin-top: -10px;
   margin-bottom: 10px;
   margin-left: 20px;
   font-size: 18px;
-  decoration: none;
 }
 
 @media (max-width: 767px) {
@@ -582,6 +588,7 @@ section a {
     font-size: 14px;
   }
 }
+
 #projects li a {
     text-decoration: none; /* Removes the underline from the link */
 }
@@ -589,8 +596,8 @@ section a {
   font-family: Georgia, serif;
   font-size: 18px;
   padding-left: 20px;
-  border: 1px solid #ff9a9e;
-  border-radius: 5px;
+  border: 1px solid #002B5B; /* Navy Blue */
+  border-radius: 10px;
   padding: 5px;
   margin: 5px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -601,10 +608,9 @@ section a {
   list-style-position: inside; /* Ensures the bullet is inside the padding */
 }
 
-.project h2 {
-  color: purple;
+.project h2 a {
+  color: #228B22;  /* Forest Green */
 }
-
 .project img {
   width: 50px; /*Adjust image size as needed*/
   height: 50px;
