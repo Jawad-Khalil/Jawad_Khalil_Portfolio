@@ -7,7 +7,7 @@
 
 /* Basic styles */
 body {
-  font-family: Arial, sans-serif;   
+  font-family: Arial, sans-serif;
   line-height: 1.6; /* Distance between two lines  */
   background-color: white;
 }
@@ -18,8 +18,8 @@ body {
 
 /* Header styles */
 header {
-  background-color: #002B5B; /* Navy Blue */
-  color: #FFFFE0; /* Soft Yellow */
+  background-color: #002b5b; /* Navy Blue */
+  color: #ffffe0; /* Soft Yellow */
   padding: 30px 0; /* Padding to the top and bottom */
   text-align: center; /* Center align header content */
 }
@@ -46,7 +46,7 @@ header {
 
 /* CSS for Menu Section */
 .menu {
-  background-color: #2F4F4F; /* Dark Slate Gray */
+  background-color: #2f4f4f; /* Dark Slate Gray */
   text-align: center;
   padding: 5px 0;
 }
@@ -60,7 +60,7 @@ header {
 
 .menu a {
   text-decoration: none; /* Removes underline from all links in the menu */
-  color: #FFFFE0; /* Soft Yellow */
+  color: #ffffe0; /* Soft Yellow */
 }
 
 .menu ul {
@@ -84,23 +84,23 @@ header {
 
 /* CSS for Profile Image Section */
 .profile-container {
-  position: relative;  /* Flexibility for positioning child elements */
-  display: flex;  /* To create flexible and responsive layouts */
-  justify-content: center;  /* Child elements are centered along the horizontal axis */
-  align-items: center;  /* Child elements are centered along the vertical axis */
-  height: 48vh;  /* 48% of the viewport height (the height of the visible area of the web page) */
-  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");  /* Visually appealing background image to the container */
-  background-size: cover;  /* Maintains the aspect ratio of the image while covering the entire container */
-  background-position: center;  /* Focal point of the background image is centered, */
+  position: relative; /* Flexibility for positioning child elements */
+  display: flex; /* To create flexible and responsive layouts */
+  justify-content: center; /* Child elements are centered along the horizontal axis */
+  align-items: center; /* Child elements are centered along the vertical axis */
+  height: 48vh; /* 48% of the viewport height (the height of the visible area of the web page) */
+  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Visually appealing background image to the container */
+  background-size: cover; /* Maintains the aspect ratio of the image while covering the entire container */
+  background-position: center; /* Focal point of the background image is centered, */
 }
 
 .profile-image {
-  position: relative;  /*  */
-  z-index: 1;  /* Ensures that this element is placed in front of other elements with lower z-index values. */
+  position: relative; /*  */
+  z-index: 1; /* Ensures that this element is placed in front of other elements with lower z-index values. */
   width: 350px;
   height: 350px;
   border-radius: 50%; /* Ensures the container is perfectly circular */
-  overflow: hidden;  /* Prevents parts of the image from spilling out of the defined 350px by 350px circular area */
+  overflow: hidden; /* Prevents parts of the image from spilling out of the defined 350px by 350px circular area */
 }
 
 .profile-image img {
@@ -131,7 +131,7 @@ section {
 }
 
 section h1 {
-  color: #002B5B; /* Navy Blue */
+  color: #002b5b; /* Navy Blue */
   text-decoration: none;
   font-size: 35px;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
@@ -139,7 +139,7 @@ section h1 {
 }
 
 section h2 {
-  color: #228B22;  /* Forest Green */
+  color: #228b22; /* Forest Green */
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
   margin-bottom: 15px;
   margin-top: 15px;
@@ -153,9 +153,9 @@ p {
 /* Specific symbols for each section */
 #personal-info h1::before {
   content: "📋"; /* Symbol for Personal Information */
-  position: relative;  /* fine-tuning of the symbol's placement relative to the <h1> heading */
+  position: relative; /* fine-tuning of the symbol's placement relative to the <h1> heading */
   left: -10px;
-  top: 0;  /* the symbol is vertically aligned with the text */
+  top: 0; /* the symbol is vertically aligned with the text */
 }
 
 #education h1::before {
@@ -232,37 +232,40 @@ section ul {
 
 /* format paragraph */
 .spaced {
-   display: block; /* Ensures the element behaves like a block element */
-   text-indent: 30px; /* visually separates the start of a paragraph from the rest of the text */
-   margin-top: 7px;
+  display: block; /* Ensures the element behaves like a block element */
+  text-indent: 30px; /* visually separates the start of a paragraph from the rest of the text */
+  margin-top: 7px;
 }
 
 /* CSS for Scroll to Top Button */
 .scroll-to-top-btn {
-  position: fixed;  /* Ensures the button is always visible to the user as they scroll */
-  bottom: 20px;  /* Positions the button 20 pixels away from the bottom */
+  position: fixed; /* Ensures the button is always visible to the user as they scroll */
+  bottom: 20px; /* Positions the button 20 pixels away from the bottom */
   right: 20px;
-  display: none;  /* Initially hides the button from view */
+  display: none; /* Initially hides the button from view */
   font-size: 20px;
-  color: #fff;  /* Sets the text or icon color to white */
-  background-color: #002B5B; /* Sets the background color of the button to a Navy Blue (#002B5B) */
+  color: #fff; /* Sets the text or icon color to white */
+  background-color: #002b5b; /* Sets the background color of the button to a Navy Blue (#002B5B) */
   padding: 10px; /* Ensures the button content is not cramped and has some space around it */
   border-radius: 60%; /* Creates a circular or oval shape */
-  text-decoration: none;  /* Removes any underlining from text or links inside the button */
+  text-decoration: none; /* Removes any underlining from text or links inside the button */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease-in-out, transform 0.3s; /* Smoothly animates changes to the button’s opacity and transform properties */
-  z-index: 1000;  /* Prevents the button from being hidden behind other content on the page */
+  z-index: 1000; /* Prevents the button from being hidden behind other content on the page */
   height: 43px;
 }
 
 .scroll-to-top-btn:hover {
-  opacity: 0.8;  /* Reduces the button's opacity to 80% of its original value when hovered over */
-  transform: scale(1.1);  /* Increases the size of the button by 10% when hovered over */
+  opacity: 0.8; /* Reduces the button's opacity to 80% of its original value when hovered over */
+  transform: scale(
+    1.1
+  ); /* Increases the size of the button by 10% when hovered over */
 }
 
 /* Show the button when scrolling down 20px from the top */
-.scroll-to-top-btn.show { /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
-  display: block;  /* makes the button visible and ensures it behaves like a block element */
+.scroll-to-top-btn.show {
+  /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
+  display: block; /* makes the button visible and ensures it behaves like a block element */
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -287,18 +290,19 @@ section ul {
 
 .info-table th,
 .info-table td {
-  border: 1px solid #002B5B; /* a structured, grid-like appearance */
-  padding: 8px;  /* space between the cell content and its borders */
+  border: 1px solid #002b5b; /* a structured, grid-like appearance */
+  padding: 8px; /* space between the cell content and its borders */
   text-align: left;
 }
 
 .info-table th {
-  background-color: #CCCCFF; /* Periwinkle (soft, light purple) */
+  background-color: #ccccff; /* Periwinkle (soft, light purple) */
   font-weight: bold;
 }
 
-.info-table td:nth-child(2) { /* second child element of each row ("<tr>") */
-  width: 75%;  /* Sets the width of the second column to 75% of the table's width */
+.info-table td:nth-child(2) {
+  /* second child element of each row ("<tr>") */
+  width: 75%; /* Sets the width of the second column to 75% of the table's width */
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -332,13 +336,13 @@ section ul {
 
 .education-table th,
 .education-table td {
-  border: 1px solid #002B5B; /* a structured, grid-like appearance */
+  border: 1px solid #002b5b; /* a structured, grid-like appearance */
   padding: 6px;
   text-align: left;
 }
 
 .education-table th {
-  background-color: #CCCCFF; /* Periwinkle (soft, light purple) */
+  background-color: #ccccff; /* Periwinkle (soft, light purple) */
   font-weight: bold;
 }
 
@@ -418,13 +422,13 @@ section ul {
 
 .certificate-table th,
 .certificate-table td {
-  border: 1px solid #002B5B; /* a structured, grid-like appearance */
+  border: 1px solid #002b5b; /* a structured, grid-like appearance */
   padding: 6px;
   text-align: left;
 }
 
 .certificate-table th {
-  background-color: #CCCCFF; /* Periwinkle (soft, light purple) */
+  background-color: #ccccff; /* Periwinkle (soft, light purple) */
   font-weight: bold;
 }
 
@@ -489,8 +493,8 @@ section ul {
 
 /* All skills*/
 .skills-list {
-  display: flex;  /* items inside it are aligned in a row by default */
-  flex-wrap: wrap;  /* automatically move to the next line instead of overflowing out of the container */
+  display: flex; /* items inside it are aligned in a row by default */
+  flex-wrap: wrap; /* automatically move to the next line instead of overflowing out of the container */
   margin-left: 6px;
 }
 
@@ -498,14 +502,14 @@ section ul {
 .skill {
   flex: 0 0 15%; /* take up 15% of the width of its parent container, ensuring a consistent size */
   padding: 10px; /*  */
-  box-sizing: border-box;  /* padding and border are included within the element's width and height */
-  border: 1px solid #002B5B; /* Navy Blue */
+  box-sizing: border-box; /* padding and border are included within the element's width and height */
+  border: 1px solid #002b5b; /* Navy Blue */
   border-radius: 35px; /* Rounded corners */
   padding: 10px; /* Padding inside the box */
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
   margin-bottom: 20px;
   margin-right: 12px;
-  background-color: #F0FFF0;  /* Honeydew */
+  background-color: #f0fff0; /* Honeydew */
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -558,7 +562,6 @@ section ul {
   }
 }
 
-
 section a {
   font-weight: bold;
 }
@@ -567,14 +570,17 @@ section a {
 
 /* Each Project */
 .project {
-  border: 1px solid #002B5B; /* Navy Blue */
+  border: 1px solid #002b5b; /* Navy Blue */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside the box */
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
   margin-bottom: 20px;
-  background-color: #F0FFF0;  /* Honeydew */
+  background-color: #f0fff0; /* Honeydew */
 }
 
+.project h2 {
+  margin-top: 0px;
+}
 /* Paragraph settings within "project" section */
 #projects p {
   margin-top: -10px;
@@ -584,19 +590,19 @@ section a {
 }
 
 @media (max-width: 767px) {
-  #projects p{
+  #projects p {
     font-size: 14px;
   }
 }
 
 #projects li a {
-    text-decoration: none; /* Removes the underline from the link */
+  text-decoration: none; /* Removes the underline from the link */
 }
 .project li {
   font-family: Georgia, serif;
   font-size: 18px;
   padding-left: 20px;
-  border: 1px solid #002B5B; /* Navy Blue */
+  border: 1px solid #002b5b; /* Navy Blue */
   border-radius: 10px;
   padding: 5px;
   margin: 5px 0;
@@ -609,12 +615,12 @@ section a {
 }
 
 .project h2 a {
-  color: #228B22;  /* Forest Green */
+  color: #228b22; /* Forest Green */
 }
 .project img {
-  width: 50px; /*Adjust image size as needed*/
-  height: 50px;
-  margin-bottom: -15px;
+  width: 35px; /*Adjust image size as needed*/
+  height: 35px;
+  margin-bottom: -10px;
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -646,32 +652,12 @@ section a {
   margin-right: 4px; /* Optional: add some space between the counter and the heading text */
 }
 
-.footer {
-  background-color: black;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media screen and (max-width: 768px) {
-  .footer {
-    padding: 15px 0;
-    font-size: 12px;
-  }
-}
+/* "thanks" Section */
 
 /* Footer styles */
 .footer {
   background-color: black;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   font-size: 14px;
   color: #f2f2f2;
@@ -701,7 +687,7 @@ section a {
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 12px;
   }
 }
