@@ -44,6 +44,17 @@ header {
   margin: 0;
 }
 
+.email_info a {
+  color: #ffffe0; /* Soft Yellow */
+}
+
+.email_info img {
+  margin-bottom: -4px;
+}
+.mobile_info img {
+  margin-bottom: -4px;
+}
+
 /* CSS for Menu Section */
 .menu {
   background-color: #2f4f4f; /* Dark Slate Gray */
