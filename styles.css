@@ -190,8 +190,15 @@ p {
   top: 0;
 }
 
+#jobs h1::before {
+  content: "💼"; /* Symbol for Briefcase, representing jobs or employment */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
 #projects h1::before {
-  content: "💼"; /* Symbol for Projects */
+  content: "📂"; /* Symbol for Folder, representing organized projects */
   position: relative;
   left: -10px;
   top: 0;
@@ -575,6 +582,92 @@ section ul {
 
 section a {
   font-weight: bold;
+}
+
+/* "jobs" Section */
+
+/* Each job */
+.job {
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  margin-bottom: 20px;
+  background-color: #f0fff0; /* Honeydew */
+}
+
+.job h2 {
+  margin-top: 0px;
+}
+/* Paragraph settings within "project" section */
+#jobs p {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  #jobs p {
+    font-size: 14px;
+  }
+}
+
+#jobs li a {
+  text-decoration: none; /* Removes the underline from the link */
+}
+.job li {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.job ul {
+  list-style-position: inside; /* Ensures the bullet is inside the padding */
+}
+
+.job h2 a {
+  color: #228b22; /* Forest Green */
+}
+.job img {
+  width: 35px; /*Adjust image size as needed*/
+  height: 35px;
+  margin-bottom: -10px;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .job li {
+    font-size: 14px;
+  }
+
+  .job h2 {
+    font-size: 18px;
+  }
+
+  .job img {
+    width: 25px; /*Adjust image size as needed*/
+    height: 25px;
+    margin-bottom: -5px;
+  }
+}
+
+/* Initialize the counter for the jobs section */
+#jobs {
+  counter-reset: jobCounter; /* Initialize the counter */
+}
+
+#jobs .job h2::before {
+  counter-increment: jobCounter; /* Increment the counter for each h2 */
+  content: "Job " counter(jobCounter) ": "; /* Display the counter before the heading text */
+  font-weight: bold; /* Optional: make the counter bold */
+  margin-right: 4px; /* Optional: add some space between the counter and the heading text */
 }
 
 /* "projects" Section */
