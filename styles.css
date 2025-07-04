@@ -137,8 +137,6 @@ section {
   margin-bottom: 15px;
 }
 
- 
-
 section h2 {
   color: #002b5b; /* Navy Blue */
   text-decoration: none;
@@ -458,7 +456,6 @@ section ul {
   top: 0;
 }
 
-
 /* "certificates" Section
 /* Certificate Table */
 .certificate-table {
@@ -548,7 +545,6 @@ section ul {
 /* Each skill*/
 .skill {
   flex: 0 0 15%; /* take up 15% of the width of its parent container, ensuring a consistent size */
-  padding: 10px; /*  */
   box-sizing: border-box; /* padding and border are included within the element's width and height */
   border: 1px solid #002b5b; /* Navy Blue */
   border-radius: 35px; /* Rounded corners */
@@ -779,7 +775,7 @@ section a {
 
 /* "thanks" Section */
 #thanks h4 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Footer styles */
