@@ -738,6 +738,9 @@ section a {
 }
 
 /* "thanks" Section */
+#thanks h4 {
+    margin-left: 20px;
+}
 
 /* Footer styles */
 .footer {
