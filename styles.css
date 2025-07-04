@@ -442,12 +442,12 @@ section ul {
 @media screen and (max-width: 768px) {
   .languages-table {
     width: 100%;
-    font-size: 12px;
+    font-size: 7px;
   }
 
   .languages-table th,
   .languages-table td {
-    padding: 4px;
+    padding: 2px;
   }
 }
 
