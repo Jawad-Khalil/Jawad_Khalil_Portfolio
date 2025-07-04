@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {  // Adds an event listener for s
     scrollBtn.classList.add("show");  // it adds the show class to the scrollBtn element, making the button visible.
   } else {
     scrollBtn.classList.remove("show");  // If the user hasn’t scrolled more than 20 pixels from the top, it removes the show class from the scrollBtn element, hiding the button.
-});
+  }});
 
   // scrollToTop Function
 function scrollToTop() {  // Function to scroll the page to the top
