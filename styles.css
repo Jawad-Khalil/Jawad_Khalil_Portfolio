@@ -12,10 +12,6 @@ body {
   background-color: white;
 }
 
-.container h1 {
-  margin-bottom: 20px; /* Section headdings */
-}
-
 /* Header styles */
 header {
   background-color: #002b5b; /* Navy Blue */
@@ -141,7 +137,9 @@ section {
   margin-bottom: 15px;
 }
 
-section h1 {
+ 
+
+section h2 {
   color: #002b5b; /* Navy Blue */
   text-decoration: none;
   font-size: 35px;
@@ -149,7 +147,7 @@ section h1 {
   margin-left: 15px;
 }
 
-section h2 {
+section h3 {
   color: #228b22; /* Forest Green */
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
   margin-bottom: 15px;
@@ -162,42 +160,42 @@ p {
 }
 
 /* Specific symbols for each section */
-#personal-info h1::before {
+#personal-info h2::before {
   content: "📋"; /* Symbol for Personal Information */
   position: relative; /* fine-tuning of the symbol's placement relative to the <h1> heading */
   left: -10px;
   top: 0; /* the symbol is vertically aligned with the text */
 }
 
-#education h1::before {
+#education h2::before {
   content: "🎓"; /* Symbol for Education */
   position: relative;
   left: -10px;
   top: 0;
 }
 
-#certificates h1::before {
+#certificates h2::before {
   content: "📜"; /* Symbol for Certificates */
   position: relative;
   left: -10px;
   top: 0;
 }
 
-#skills h1::before {
+#skills h2::before {
   content: "💡"; /* Symbol for Skills */
   position: relative;
   left: -10px;
   top: 0;
 }
 
-#jobs h1::before {
+#jobs h2::before {
   content: "💼"; /* Symbol for Briefcase, representing jobs or employment */
   position: relative;
   left: -10px;
   top: 0;
 }
 
-#projects h1::before {
+#projects h2::before {
   content: "📂"; /* Symbol for Folder, representing organized projects */
   position: relative;
   left: -10px;
@@ -221,15 +219,6 @@ section ul {
     padding: 0 0px;
   }
 
-  section h1 {
-    font-size: 24px;
-  }
-
-  section h2 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    margin-top: 1px;
-  }
   #about p {
     margin-top: -7px;
     font-size: 14px;
@@ -243,7 +232,7 @@ section ul {
 }
 
 /* Specific CSS for the h2 in the about section */
-#about h1 {
+#about h2 {
   margin-top: 3px;
   margin-bottom: 2px;
 }
@@ -262,7 +251,7 @@ section ul {
   right: 20px;
   display: none; /* Initially hides the button from view */
   font-size: 20px;
-  color: #fff; /* Sets the text or icon color to white */
+  color: #2f4f4f; /* Sets the text or icon color to white */
   background-color: #002b5b; /* Sets the background color of the button to a Navy Blue (#002B5B) */
   padding: 10px; /* Ensures the button content is not cramped and has some space around it */
   border-radius: 60%; /* Creates a circular or oval shape */
@@ -596,7 +585,7 @@ section a {
   background-color: #f0fff0; /* Honeydew */
 }
 
-.job h2 {
+.job h3 {
   margin-top: 0px;
 }
 /* Paragraph settings within "project" section */
@@ -632,7 +621,7 @@ section a {
   list-style-position: inside; /* Ensures the bullet is inside the padding */
 }
 
-.job h2 a {
+.job h3 a {
   color: #228b22; /* Forest Green */
 }
 .job img {
@@ -647,10 +636,6 @@ section a {
     font-size: 14px;
   }
 
-  .job h2 {
-    font-size: 18px;
-  }
-
   .job img {
     width: 25px; /*Adjust image size as needed*/
     height: 25px;
@@ -663,7 +648,7 @@ section a {
   counter-reset: jobCounter; /* Initialize the counter */
 }
 
-#jobs .job h2::before {
+#jobs .job h3::before {
   counter-increment: jobCounter; /* Increment the counter for each h2 */
   content: "Job " counter(jobCounter) ": "; /* Display the counter before the heading text */
   font-weight: bold; /* Optional: make the counter bold */
@@ -682,7 +667,7 @@ section a {
   background-color: #f0fff0; /* Honeydew */
 }
 
-.project h2 {
+.project h3 {
   margin-top: 0px;
 }
 /* Paragraph settings within "project" section */
@@ -718,7 +703,7 @@ section a {
   list-style-position: inside; /* Ensures the bullet is inside the padding */
 }
 
-.project h2 a {
+.project h3 a {
   color: #228b22; /* Forest Green */
 }
 .project img {
@@ -733,10 +718,6 @@ section a {
     font-size: 14px;
   }
 
-  .project h2 {
-    font-size: 18px;
-  }
-
   .project img {
     width: 25px; /*Adjust image size as needed*/
     height: 25px;
@@ -749,7 +730,7 @@ section a {
   counter-reset: projectCounter; /* Initialize the counter */
 }
 
-#projects .project h2::before {
+#projects .project h3::before {
   counter-increment: projectCounter; /* Increment the counter for each h2 */
   content: "Project " counter(projectCounter) ": "; /* Display the counter before the heading text */
   font-weight: bold; /* Optional: make the counter bold */
