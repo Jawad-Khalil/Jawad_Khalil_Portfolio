@@ -419,6 +419,46 @@ section ul {
   }
 }
 
+/* "languages" Section */
+.languages-table {
+  width: 60%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.languages-table th,
+.languages-table td {
+  border: 1px solid #002b5b; /* Navy Blue */
+  padding: 6px;
+  text-align: center;
+}
+
+.languages-table th {
+  background-color: #ccccff; /* Periwinkle */
+  font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .languages-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .languages-table th,
+  .languages-table td {
+    padding: 4px;
+  }
+}
+
+#languages h2::before {
+  content: "🌐"; /* Globe symbol */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+
 /* "certificates" Section
 /* Certificate Table */
 .certificate-table {
