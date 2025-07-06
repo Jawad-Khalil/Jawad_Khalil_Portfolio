@@ -145,6 +145,13 @@ section h2 {
   margin-left: 15px;
 }
 
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media only screen and (max-width: 767px) {
+  section h2 {
+    font-size: 20px;
+  }
+}
+
 section h3 {
   color: #228b22; /* Forest Green */
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
